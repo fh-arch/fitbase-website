@@ -10,7 +10,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
     <section id="about" className="relative bg-[#D9FDEE] pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden border-b border-[#E7E7E2]">
       
       {/* Background Soft Abstract Shapes */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-[#18F28D]/40 blur-3xl" />
         <div className="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-[#C9D8C5]/30 blur-2xl" />
       </div>
