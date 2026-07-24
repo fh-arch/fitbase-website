@@ -106,7 +106,7 @@ export default function BlogPage() {
 }
 
 export function BlogHeader() {
-  return <header className="sticky top-0 z-40 border-b border-[#E7E7E2] bg-white/90 backdrop-blur-xl"><div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"><a href="/" aria-label="Fitbase ana sayfa"><img src="/fitbase-logo.png" alt="Fitbase" width="150" height="45" className="h-9 w-auto" /></a><nav className="flex items-center gap-3"><a href="/blog" className="hidden text-sm font-bold text-[#252525] sm:block">Blog</a><a href="/#pricing" className="rounded-xl bg-[#252525] px-5 py-3 text-xs font-bold text-white hover:bg-black">Demo al</a></nav></div></header>;
+  return <header className="sticky top-0 z-40 border-b border-[#E7E7E2] bg-white/90 backdrop-blur-xl"><div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"><a href="/" aria-label="Fitbase ana sayfa"><img src="/fitbase-logo.png" alt="Fitbase" width="188" height="56" className="h-[45px] w-auto" /></a><nav className="flex items-center gap-3"><a href="/blog" className="hidden text-sm font-bold text-[#252525] sm:block">Blog</a><a href="/#pricing" className="rounded-xl bg-[#252525] px-5 py-3 text-xs font-bold text-white hover:bg-black">Demo al</a></nav></div></header>;
 }
 
 export function BlogFooter() {

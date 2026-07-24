@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           {/* Brand Info */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1 space-y-4">
             <a href="#top" className="inline-flex items-center" aria-label="Fitbase ana sayfa">
-              <img src="/fitbase-logo.png" alt="Fitbase" className="h-8 w-auto max-w-[135px] object-contain" />
+              <img src="/fitbase-logo.png" alt="Fitbase" className="h-10 w-auto max-w-[169px] object-contain" />
             </a>
             
             <p className="text-xs text-[#5F6368] leading-relaxed">

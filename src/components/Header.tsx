@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo, onOpenStaffLogin }) 
           <img
             src="/fitbase-logo.png"
             alt="Fitbase"
-            className="h-9 w-auto max-w-[150px] object-contain transition-transform group-hover:scale-[1.02]"
+            className="h-[45px] w-auto max-w-[188px] object-contain transition-transform group-hover:scale-[1.02]"
           />
         </a>
 
