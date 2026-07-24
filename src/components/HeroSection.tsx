@@ -67,8 +67,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             <div className="absolute -inset-4 rounded-[2.25rem] bg-[#18F28D]/25 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border-[6px] border-white bg-white shadow-[0_28px_80px_rgba(17,75,50,0.22)]">
               <img
-                src="/fitbase-hero-studio.png"
-                alt="Modern bir pilates stüdyosunu tabletinden yöneten işletme sahibi"
+                src="/fitbase-hero-athletes.png"
+                alt="Modern bir spor stüdyosunda birlikte kuvvet antrenmanı yapan atletik kadın ve erkek"
+                width={1536}
+                height={1024}
+                fetchPriority="high"
                 className="aspect-[16/11] w-full object-cover object-center transition-transform duration-700 hover:scale-[1.025]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#101814]/35 via-transparent to-transparent" />

@@ -28,6 +28,24 @@ html {
   scroll-padding-top: 5.5rem;
 }
 
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-150%);
+  border-radius: .75rem;
+  background: #252525;
+  color: white;
+  padding: .75rem 1rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 button, a {
   -webkit-tap-highlight-color: transparent;
 }

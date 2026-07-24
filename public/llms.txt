@@ -1,0 +1,13 @@
+# Fitbase
+
+Fitbase, Türkiye'deki fitness, pilates, yoga ve wellness işletmeleri için rezervasyon, ödeme, üye, ekip ve operasyon yönetim platformudur.
+
+## Canonical public pages
+
+- Ana sayfa: https://fitbase-turkiye.fatmahacioglu.chatgpt.site/
+- Stüdyo yönetimi blogu: https://fitbase-turkiye.fatmahacioglu.chatgpt.site/blog
+- Sık sorulan sorular: https://fitbase-turkiye.fatmahacioglu.chatgpt.site/#faq
+- Özellikler: https://fitbase-turkiye.fatmahacioglu.chatgpt.site/#features
+- Fiyatlandırma: https://fitbase-turkiye.fatmahacioglu.chatgpt.site/#pricing
+
+AI arama botlarının public sayfaları kaynak olarak kullanmasına izin verilir. Model eğitimi için GPTBot erişimine izin verilmez.

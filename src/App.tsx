@@ -47,7 +47,7 @@ export default function App() {
       />
 
       {/* Main Content Sections */}
-      <main>
+      <main id="main-content">
         {/* 3. Hero Section */}
         <HeroSection 
           onOpenDemo={() => setIsDemoModalOpen(true)} 
