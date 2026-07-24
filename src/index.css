@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mint-main: #18F28D;
+    --mint-light: #D9FDEE;
+    --sage: #C9D8C5;
+    --cream: #FAF7F2;
+    --charcoal: #252525;
+    --muted-text: #5F6368;
+    --border-color: #E7E7E2;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #252525;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid rgba(24, 242, 141, 0.45);
+  outline-offset: 3px;
+}
+
+/* Custom Utilities */
+.bg-mint-main { background-color: #18F28D; }
+.bg-mint-light { background-color: #D9FDEE; }
+.bg-sage { background-color: #C9D8C5; }
+.bg-cream { background-color: #FAF7F2; }
+.bg-charcoal { background-color: #252525; }
+
+.text-charcoal { color: #252525; }
+.text-muted-custom { color: #5F6368; }
+.border-custom { border-color: #E7E7E2; }
+
+.shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(37, 37, 37, 0.08);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 20px rgba(37, 37, 37, 0.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9D8C5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #18F28D;
+}

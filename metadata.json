@@ -1,0 +1,6 @@
+{
+  "name": "fitbase",
+  "description": "Fitness, yoga ve pilates stüdyoları için modern ve sade işletme yönetim platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
