@@ -46,6 +46,25 @@ html {
   transform: translateY(0);
 }
 
+.prose-fitbase section + section {
+  margin-top: 3rem;
+}
+
+.prose-fitbase h2 {
+  color: #252525;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.prose-fitbase p {
+  color: #4f5753;
+  font-size: 1.05rem;
+  line-height: 1.95;
+  margin-top: 1rem;
+}
+
 button, a {
   -webkit-tap-highlight-color: transparent;
 }

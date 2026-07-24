@@ -1,17 +1,18 @@
-import { BLOG_POSTS } from "../../src/data";
+import { blogArticles } from "../../src/blogArticles";
 import { siteConfig } from "../../src/siteConfig";
 
 const escapeXml = (value: string) =>
   value.replace(/[<>&'"]/g, (char) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" })[char] ?? char);
 
 export async function GET() {
-  const items = BLOG_POSTS.slice(0, 3).map((post) => `
+  const items = blogArticles.map((post) => `
     <item>
       <title>${escapeXml(post.title)}</title>
-      <link>${siteConfig.url}/blog#${post.slug}</link>
-      <guid isPermaLink="true">${siteConfig.url}/blog#${post.slug}</guid>
-      <description>${escapeXml(post.excerpt)}</description>
+      <link>${siteConfig.url}/blog/${post.slug}</link>
+      <guid isPermaLink="true">${siteConfig.url}/blog/${post.slug}</guid>
+      <description>${escapeXml(post.description)}</description>
       <author>Fitbase Editoryal Ekibi</author>
+      <pubDate>${new Date(post.published).toUTCString()}</pubDate>
     </item>`).join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

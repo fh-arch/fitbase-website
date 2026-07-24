@@ -1,5 +1,5 @@
 import React from 'react';
-import { BLOG_POSTS } from '../data';
+import { blogArticles } from '../blogArticles';
 import { ArrowRight, BookOpen, Clock, Tag } from 'lucide-react';
 
 interface BlogSectionProps {
@@ -7,7 +7,7 @@ interface BlogSectionProps {
 }
 
 export const BlogSection: React.FC<BlogSectionProps> = () => {
-  const posts = BLOG_POSTS.slice(0, 3);
+  const posts = blogArticles.slice(0, 3);
 
   return (
     <section id="blog" className="py-20 md:py-28 bg-[#FAF7F2] border-t border-[#E7E7E2]">
@@ -36,7 +36,7 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {posts.map((post, index) => (
             <article
-              key={post.id}
+              key={post.slug}
               className="group flex min-h-[330px] flex-col justify-between overflow-hidden rounded-3xl border border-[#E7E7E2] bg-white p-6 hover:-translate-y-1 hover:shadow-xl"
             >
               <div>
@@ -50,10 +50,10 @@ export const BlogSection: React.FC<BlogSectionProps> = () => {
                 <h3 className="mb-3 text-xl font-extrabold leading-snug text-[#252525] group-hover:text-emerald-700">
                   {post.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-[#5F6368] line-clamp-3">{post.excerpt}</p>
+                <p className="text-sm leading-relaxed text-[#5F6368] line-clamp-3">{post.description}</p>
               </div>
               <a
-                href={`/blog#${post.slug}`}
+                href={`/blog/${post.slug}`}
                 className="mt-6 inline-flex items-center gap-2 border-t border-[#E7E7E2] pt-4 text-sm font-bold text-[#252525]"
                 aria-label={`${post.title} rehberini blog sayfasında oku`}
               >
