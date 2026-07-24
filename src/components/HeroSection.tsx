@@ -21,7 +21,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#C9D8C5] shadow-xs mb-6">
               <CircleDot className="w-3.5 h-3.5 text-teal-800" />
               <span className="text-xs font-bold uppercase tracking-wider text-[#252525]">
-                İŞLETME YÖNETİM YAZILIMI
+            FITNESS YÖNETİM YAZILIMI
               </span>
             </div>
 
