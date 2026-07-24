@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, CheckCircle } from 'lucide-react';
+import { ArrowRight, CircleDot, CheckCircle } from 'lucide-react';
 
 interface FinalCTASectionProps {
   onOpenDemo: () => void;
@@ -16,7 +16,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenDemo }) 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-800 text-[#18F28D] text-xs font-bold uppercase tracking-wider mb-6 border border-zinc-700">
-          <Sparkles className="w-3.5 h-3.5 text-[#18F28D]" />
+          <CircleDot className="w-3.5 h-3.5 text-[#18F28D]" />
           <span>BAŞLAMAYA HAZIR MISINIZ?</span>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Smartphone, Check, Bell, Calendar, Sparkles, Shield, ChevronRight } from 'lucide-react';
+import { Smartphone, Check, Bell, Calendar, CircleDot, Shield, ChevronRight } from 'lucide-react';
 
 interface BrandedAppSectionProps {
   onOpenDemo: () => void;
@@ -122,7 +122,7 @@ export const BrandedAppSection: React.FC<BrandedAppSectionProps> = ({ onOpenDemo
               {/* Push Notification Card */}
               <div className="bg-[#FAF7F2] p-3 rounded-2xl border border-[#E7E7E2] space-y-1.5">
                 <div className="flex items-center gap-1.5 text-[10px] font-bold text-teal-800">
-                  <Sparkles className="w-3 h-3" />
+                  <CircleDot className="w-3 h-3" />
                   <span>Ders Hatırlatması</span>
                 </div>
                 <p className="text-xs font-bold text-[#252525]">Yarın 10:30 Vinyasa Yoga</p>

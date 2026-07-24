@@ -1,6 +1,6 @@
 import React from 'react';
 import { TESTIMONIALS } from '../data';
-import { Quote, Sparkles, MapPin, TrendingUp } from 'lucide-react';
+import { Quote, CircleDot, MapPin, TrendingUp } from 'lucide-react';
 
 export const TestimonialSection: React.FC = () => {
   return (

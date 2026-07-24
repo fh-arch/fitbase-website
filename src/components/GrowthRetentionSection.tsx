@@ -1,6 +1,6 @@
 import React from 'react';
 import { AUTOMATION_STEPS } from '../data';
-import { UserPlus, Bell, RefreshCw, HeartPulse, AlertCircle, ArrowDown, Sparkles, CheckCircle2 } from 'lucide-react';
+import { UserPlus, Bell, RefreshCw, HeartPulse, AlertCircle, ArrowDown, CircleDot, CheckCircle2 } from 'lucide-react';
 
 interface GrowthRetentionSectionProps {
   onOpenDemo: () => void;
@@ -31,7 +31,7 @@ export const GrowthRetentionSection: React.FC<GrowthRetentionSectionProps> = ({ 
           {/* Left Column */}
           <div className="lg:col-span-5 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-[#252525] border border-[#C9D8C5]">
-              <Sparkles className="w-3.5 h-3.5 text-teal-800" />
+              <CircleDot className="w-3.5 h-3.5 text-teal-800" />
               <span>KARMAŞA OLMADAN BÜYÜME</span>
             </div>
 

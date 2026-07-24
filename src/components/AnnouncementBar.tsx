@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowUpRight } from 'lucide-react';
+import { CircleDot, ArrowUpRight } from 'lucide-react';
 
 interface AnnouncementBarProps {
   onAskClick: () => void;

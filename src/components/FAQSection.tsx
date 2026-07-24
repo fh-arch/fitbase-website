@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, HelpCircle, Sparkles, MessageCircle } from 'lucide-react';
+import { ChevronDown, HelpCircle, CircleDot, MessageCircle } from 'lucide-react';
 
 interface FAQItem {
   id: string;
@@ -176,7 +176,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onOpenDemo }) => {
             onClick={onOpenDemo}
             className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#18F28D] text-[#252525] font-bold text-xs hover:bg-emerald-300 transition-all flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5" />
+            <CircleDot className="w-3.5 h-3.5" />
             <span>Uzmanımızla Görüşün</span>
           </button>
         </div>

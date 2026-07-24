@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Send, Sparkles, Smartphone, CheckCircle2 } from 'lucide-react';
+import { X, Send, CircleDot, Smartphone, CheckCircle2 } from 'lucide-react';
 import { AskUsModalProps } from '../types';
 
 export const AskUsModal: React.FC<AskUsModalProps> = ({ isOpen, onClose }) => {

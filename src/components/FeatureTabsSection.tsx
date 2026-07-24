@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FEATURE_TABS } from '../data';
 import { FeatureTabKey } from '../types';
-import { Check, Calendar, Users, CreditCard, Sparkles, Clock, ChevronRight } from 'lucide-react';
+import { Check, Calendar, Users, CreditCard, CircleDot, Clock, ChevronRight } from 'lucide-react';
 
 interface FeatureTabsSectionProps {
   onOpenDemo: () => void;
@@ -59,7 +59,7 @@ export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDe
             {/* Left Column: Title, Text, Bullets, CTA */}
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#D9FDEE] text-teal-900 border border-[#18F28D]">
-                <Sparkles className="w-3.5 h-3.5 text-teal-800" />
+                <CircleDot className="w-3.5 h-3.5 text-teal-800" />
                 <span>fitbase / {activeTabData.label}</span>
               </div>
 

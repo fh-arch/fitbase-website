@@ -206,7 +206,7 @@ export const STUDIO_TYPES: StudioTypeInfo[] = [
     id: 'yoga',
     title: 'Yoga Stüdyoları',
     description: 'Dersleri doldur, bekleme listelerini yönet ve öğrencilerini geri getir.',
-    iconName: 'Sparkles',
+    iconName: 'CircleDot',
     badge: 'Topluluk & Akış'
   },
   {

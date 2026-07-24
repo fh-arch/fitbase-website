@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BLOG_POSTS } from '../data';
 import { BlogPost } from '../types';
-import { BookOpen, Clock, ArrowRight, X, Sparkles, User, Tag } from 'lucide-react';
+import { BookOpen, Clock, ArrowRight, X, CircleDot, User, Tag } from 'lucide-react';
 
 interface BlogSectionProps {
   onOpenDemo?: () => void;
@@ -107,7 +107,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onOpenDemo }) => {
               <div className="md:col-span-5 bg-gradient-to-br from-[#18F28D]/20 via-[#FAF7F2] to-[#C9D8C5]/30 rounded-2xl p-6 sm:p-8 border border-[#E7E7E2] flex flex-col justify-between h-full min-h-[220px]">
                 <div className="space-y-3">
                   <div className="w-10 h-10 rounded-xl bg-[#252525] flex items-center justify-center text-[#18F28D]">
-                    <Sparkles className="w-5 h-5" />
+                    <CircleDot className="w-5 h-5" />
                   </div>
                   <div className="text-xs font-bold text-[#252525] uppercase tracking-wider">
                     Retention Formülü

@@ -1,7 +1,7 @@
 import React from 'react';
 import { STUDIO_TYPES } from '../data';
 import { StudioTypeKey } from '../types';
-import { Activity, Sparkles, Layers, UserCheck, Building2, HeartHandshake, ArrowRight } from 'lucide-react';
+import { Activity, CircleDot, Layers, UserCheck, Building2, HeartHandshake, ArrowRight } from 'lucide-react';
 
 interface StudioTypesSectionProps {
   onSelectStudioType: (typeId: string) => void;
@@ -12,7 +12,7 @@ export const StudioTypesSection: React.FC<StudioTypesSectionProps> = ({ onSelect
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'Activity': return <Activity className="w-5 h-5 text-teal-800" />;
-      case 'Sparkles': return <Sparkles className="w-5 h-5 text-teal-800" />;
+      case 'CircleDot': return <CircleDot className="w-5 h-5 text-teal-800" />;
       case 'Layers': return <Layers className="w-5 h-5 text-teal-800" />;
       case 'UserCheck': return <UserCheck className="w-5 h-5 text-teal-800" />;
       case 'Building2': return <Building2 className="w-5 h-5 text-teal-800" />;

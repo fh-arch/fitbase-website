@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, CheckCircle2, Sparkles, Building2, Phone, Mail, User, ArrowRight, AlertCircle, HelpCircle } from 'lucide-react';
+import { X, CheckCircle2, CircleDot, Building2, Phone, Mail, User, ArrowRight, AlertCircle, HelpCircle } from 'lucide-react';
 import { DemoModalProps } from '../types';
 
 export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose, defaultStudioType }) => {
@@ -100,7 +100,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose, defaultSt
             <>
               <div className="mb-6">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#D9FDEE] text-[#252525] mb-2">
-                  <Sparkles className="w-3.5 h-3.5 text-teal-700" />
+                  <CircleDot className="w-3.5 h-3.5 text-teal-700" />
                   ÜCRETSİZ DEMO VE TANITIM
                 </span>
                 <h3 className="text-2xl font-bold text-[#252525] tracking-tight">

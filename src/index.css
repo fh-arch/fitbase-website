@@ -17,6 +17,11 @@
     background-color: #ffffff;
     overflow-x: hidden;
   }
+
+  ::selection {
+    background: #18F28D;
+    color: #15231c;
+  }
 }
 
 html {
@@ -49,6 +54,55 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 
 .shadow-card {
   box-shadow: 0 4px 20px rgba(37, 37, 37, 0.05);
+}
+
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes visual-enter {
+  from { opacity: 0; transform: translateX(32px) scale(.97); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.hero-copy { animation: hero-enter .75s cubic-bezier(.2,.8,.2,1) both; }
+.hero-visual { animation: visual-enter .9s .08s cubic-bezier(.2,.8,.2,1) both; }
+.product-panel { animation: hero-enter .8s .2s cubic-bezier(.2,.8,.2,1) both; }
+.float-card { animation: float-soft 4.5s ease-in-out infinite; }
+.float-card-delayed { animation: float-soft 5s .8s ease-in-out infinite; }
+
+main section {
+  position: relative;
+}
+
+main section :is(button, a) {
+  transition-duration: 250ms;
+}
+
+main section :is(.rounded-2xl, .rounded-3xl) {
+  transition-property: transform, box-shadow, border-color, background-color;
+  transition-duration: 300ms;
+}
+
+@media (hover: hover) {
+  main section :is(.rounded-2xl, .rounded-3xl):hover {
+    border-color: rgba(24, 242, 141, .55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
 }
 
 /* Custom scrollbar */

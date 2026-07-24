@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PRICING_PLANS } from '../data';
-import { Check, Sparkles, ArrowRight } from 'lucide-react';
+import { Check, CircleDot, ArrowRight } from 'lucide-react';
 
 interface PricingSectionProps {
   onOpenDemo: () => void;
@@ -67,7 +67,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenDemo }) =>
             >
               {plan.recommended && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#252525] text-[#18F28D] text-[11px] font-bold tracking-wider uppercase flex items-center gap-1 shadow-md">
-                  <Sparkles className="w-3 h-3 text-[#18F28D]" />
+                  <CircleDot className="w-3 h-3 text-[#18F28D]" />
                   <span>EN ÇOK TERCİH EDİLEN</span>
                 </div>
               )}
