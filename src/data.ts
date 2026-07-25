@@ -10,6 +10,32 @@ import {
 
 export const FEATURE_TABS: FeatureTabData[] = [
   {
+    id: 'crm',
+    label: 'Üye CRM',
+    title: 'Her üyeyi ve satış fırsatını tek profilde yönetin',
+    description: 'İlk iletişimden aktif üyeliğe, ders geçmişinden özel notlara kadar tüm üye yolculuğunu fitness odaklı CRM ekranında görün; hiçbir lead, görev veya yenileme fırsatı kaybolmasın.',
+    bullets: [
+      'Lead, deneme dersi ve satış fırsatı takibi',
+      'Üye profili, iletişim geçmişi ve özel notlar',
+      'Segmentler, görevler ve otomatik takip hatırlatmaları',
+      'Paket yenileme, devamsızlık ve risk sinyalleri'
+    ],
+    mockupData: {
+      badge: 'Fitness CRM & Üye Yaşam Döngüsü',
+      metrics: [
+        { label: 'Aktif Lead', value: '48 kişi', trend: '12 yeni bu hafta' },
+        { label: 'Denemeden Üyeliğe', value: '%68', trend: '+%9 dönüşüm' },
+        { label: 'Takip Görevi', value: '7 görev', trend: 'Bugün tamamlanacak' }
+      ],
+      listTitle: 'Bugünün CRM Takip Listesi',
+      listItems: [
+        { primary: 'Ece A. — Deneme Reformer Seansı', secondary: 'Dün katıldı • Paket teklifi bekliyor', tag: 'Sıcak Lead', tagColor: 'bg-emerald-100 text-emerald-800' },
+        { primary: 'Mert K. — 14 gündür gelmedi', secondary: 'Son görüşme notu ve tercih ettiği eğitmen kayıtlı', tag: 'Geri Kazan', tagColor: 'bg-mint-light text-teal-800' },
+        { primary: 'Selin Y. — Pakette 2 ders kaldı', secondary: 'Yenileme görevi: Bugün 16:00', tag: 'Yenileme', tagColor: 'bg-zinc-100 text-zinc-800' }
+      ]
+    }
+  },
+  {
     id: 'booking',
     label: 'Rezervasyon',
     title: 'Zahmetsiz rezervasyon deneyimi',
@@ -241,8 +267,8 @@ export const STUDIO_TYPES: StudioTypeInfo[] = [
 
 export const CORE_FEATURES: CoreFeatureItem[] = [
   {
-    title: 'Üye Yönetimi',
-    description: 'Her üye profilini, paketini, notunu ve aktivitesini tek yerde tut.',
+    title: 'Fitness CRM & Üye Yönetimi',
+    description: 'Lead’leri, üye profillerini, görüşme notlarını, görevleri ve tüm yaşam döngüsünü tek yerde tut.',
     iconName: 'Users'
   },
   {
@@ -466,4 +492,3 @@ export const BLOG_POSTS: BlogPost[] = [
     imageBg: 'from-emerald-50 to-teal-100'
   }
 ];
-

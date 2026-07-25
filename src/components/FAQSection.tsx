@@ -56,6 +56,12 @@ const FAQ_DATA: FAQItem[] = [
     answer: 'Evet. Eğitmenler kendilerine özel roller ile giriş yaparak sadece kendi derslerini, katılan üye listelerini ve ders içi notlarını görebilir. Finansal verilere veya diğer eğitmenlerin müşteri bilgilerine erişemezler.'
   },
   {
+    id: '9',
+    category: 'Yönetim & Ekip',
+    question: 'fitbase’in fitness CRM özelliği neleri takip eder?',
+    answer: 'Fitness CRM; reklam, form, telefon veya sosyal medyadan gelen lead’leri, deneme derslerini, görüşme notlarını, takip görevlerini ve satış aşamalarını tek profilde toplar. Üye olduktan sonra ders geçmişi, paket durumu, devamsızlık, yenileme zamanı ve iletişim geçmişi aynı profilde devam eder. Böylece ekip hiçbir fırsatı veya üyeyi gözden kaçırmaz.'
+  },
+  {
     id: '8',
     category: 'Kurulum & Geçiş',
     question: 'Uzun süreli sözleşme taahhüdü var mı? İstediğim zaman iptal edebilir miyim?',

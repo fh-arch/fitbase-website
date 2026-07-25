@@ -30,7 +30,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             </h1>
 
             <p className="text-base sm:text-lg text-[#5F6368] leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              Rezervasyon, ödeme, ekip ve üye deneyimini tek sakin platformda birleştir. Daha az manuel iş, daha yüksek doluluk, daha güçlü bağlılık.
+              Fitness CRM, rezervasyon, ödeme, ekip ve üye deneyimini tek sakin platformda birleştir. Her lead’i ve üyeyi doğru anda takip et; daha az manuel iş, daha yüksek doluluk ve daha güçlü bağlılık kazan.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mb-8">

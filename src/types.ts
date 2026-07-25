@@ -15,6 +15,7 @@ export interface StudioTypeInfo {
 }
 
 export type FeatureTabKey = 
+  | 'crm'
   | 'payments'
   | 'marketing'
   | 'team'

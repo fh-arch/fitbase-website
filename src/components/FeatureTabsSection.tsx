@@ -26,7 +26,7 @@ export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDe
             Stüdyonu güvenle yönet
           </h2>
           <p className="text-base sm:text-lg text-[#5F6368] mt-3">
-            Tüm stüdyo operasyonlarını karmaşadan uzak, sade ve entegre modüllerle yönetin.
+            Üye CRM’inden rezervasyona, ödemeden ekip ve raporlamaya kadar tüm stüdyo operasyonlarını sade ve entegre modüllerle yönetin.
           </p>
         </div>
 

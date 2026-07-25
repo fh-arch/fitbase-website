@@ -20,7 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
             </a>
             
             <p className="text-xs text-[#5F6368] leading-relaxed">
-              Fitness, yoga ve pilates stüdyoları için sade ve güvenilir işletme yönetim platformu.
+              Fitness, yoga ve pilates stüdyoları için CRM destekli, sade ve güvenilir fitness yönetim platformu.
             </p>
 
             <div className="pt-1">
@@ -34,6 +34,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           <div className="space-y-3">
             <h3 className="font-bold text-[#252525] uppercase tracking-wider text-[11px]">Ürün</h3>
             <ul className="space-y-2 font-medium">
+              <li><a href="#features" className="hover:text-[#252525] transition-colors">Fitness CRM</a></li>
               <li><a href="#features" className="hover:text-[#252525] transition-colors">Rezervasyon</a></li>
               <li><a href="#features" className="hover:text-[#252525] transition-colors">Ödemeler</a></li>
               <li><a href="#features" className="hover:text-[#252525] transition-colors">Pazarlama</a></li>

@@ -40,7 +40,7 @@ export const GrowthRetentionSection: React.FC<GrowthRetentionSectionProps> = ({ 
             </h2>
 
             <p className="text-base text-[#5F6368] leading-relaxed">
-              İlk talepten paket yenilemeye kadar fitbase, ekibinin doğru zamanda doğru mesajla takip yapmasını sağlar. Böylece daha az lead ve daha az üye kaybedersin.
+              Fitness CRM, ilk talepten paket yenilemeye kadar her görüşmeyi, notu ve görevi tek üye profilinde toplar. fitbase ekibinin doğru zamanda doğru mesajla takip yapmasını sağlar; böylece daha az lead ve daha az üye kaybedersin.
             </p>
 
             <div className="pt-2 space-y-3">
@@ -68,7 +68,7 @@ export const GrowthRetentionSection: React.FC<GrowthRetentionSectionProps> = ({ 
           <div className="lg:col-span-7 bg-white/90 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-[#E7E7E2] shadow-xl">
             <div className="flex items-center justify-between pb-4 mb-6 border-b border-[#E7E7E2]">
               <div>
-                <h3 className="text-sm font-bold text-[#252525]">Otomatik Üye Yaşam Döngüsü Akışı</h3>
+                <h3 className="text-sm font-bold text-[#252525]">Fitness CRM Üye Yaşam Döngüsü</h3>
                 <p className="text-xs text-[#5F6368]">7/24 Kesintisiz Çalışan Takip Kurguları</p>
               </div>
               <span className="px-3 py-1 rounded-full text-[11px] font-bold bg-[#18F28D] text-[#252525]">
