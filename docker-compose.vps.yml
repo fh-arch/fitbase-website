@@ -1,0 +1,9 @@
+services:
+  fitbase-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fitbase-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3002:3000"

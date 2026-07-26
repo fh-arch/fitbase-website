@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Fitbase",
-  url: "https://fitbase-turkiye.fatmahacioglu.chatgpt.site",
+  url: "https://fitbase.com.tr",
   language: "tr-TR",
   description:
     "Fitness, pilates ve yoga stüdyoları için rezervasyon, ödeme, üye, ekip ve operasyon yönetim platformu.",
