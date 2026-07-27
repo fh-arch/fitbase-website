@@ -36,7 +36,21 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/fitbase-logo.png",
+    icon: [
+      {
+        url: "/fitbase-favicon.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
+    shortcut: "/fitbase-favicon.png",
+    apple: [
+      {
+        url: "/fitbase-favicon.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
   },
 };
 
