@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, CheckCircle2, CircleDot, Building2, Phone, Mail, User, ArrowRight, AlertCircle, HelpCircle } from 'lucide-react';
 import { DemoModalProps } from '../types';
+import { openWhatsAppMessage } from '../whatsapp';
 
 export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose, defaultStudioType }) => {
   const [submitted, setSubmitted] = useState(false);
@@ -59,6 +60,29 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose, defaultSt
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
+      const studioTypeLabels: Record<string, string> = {
+        pilates: 'Pilates / Reformer',
+        yoga: 'Yoga Stüdyosu',
+        fitness: 'Fitness Stüdyosu',
+        personal_training: 'Personal Training',
+        boutique_gym: 'Butik Gym',
+        wellness: 'Wellness İşletmesi'
+      };
+      const message = [
+        'Merhaba Fitbase, web sitenizden demo talebi oluşturuyorum.',
+        '',
+        `Ad Soyad: ${formData.name.trim()}`,
+        `Stüdyo: ${formData.studioName.trim()}`,
+        `E-posta: ${formData.email.trim()}`,
+        `Telefon: ${formData.phone.trim()}`,
+        `Stüdyo Türü: ${studioTypeLabels[formData.studioType] || formData.studioType}`,
+        `Eğitmen Sayısı: ${formData.trainerCount}`,
+        `Aktif Üye Sayısı: ${formData.memberCount}`,
+        `Bizi Duyduğu Kanal: ${hearAboutLabels[formData.hearAboutUs] || formData.hearAboutUs}`,
+        `Not: ${formData.notes.trim() || 'Belirtilmedi'}`
+      ].join('\n');
+
+      openWhatsAppMessage(message);
       setSubmitted(true);
     }
   };
@@ -314,7 +338,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose, defaultSt
                     type="submit"
                     className="w-full py-3.5 px-6 rounded-2xl bg-[#252525] text-white font-semibold text-sm hover:bg-black transition-all flex items-center justify-center gap-2 shadow-md group cursor-pointer"
                   >
-                    <span>Demo Talebini Gönder</span>
+                    <span>Demo Talebini WhatsApp’tan Gönder</span>
                     <ArrowRight className="w-4 h-4 text-[#18F28D] group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
@@ -331,11 +355,11 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose, defaultSt
               </div>
               
               <h3 className="text-2xl font-bold text-[#252525]">
-                Demo talebiniz alındı!
+                WhatsApp mesajınız hazır!
               </h3>
 
               <p className="text-sm text-[#5F6368] max-w-md mx-auto leading-relaxed">
-                Teşekkürler <span className="font-semibold text-[#252525]">{formData.name}</span>. <span className="font-semibold text-[#252525]">{formData.studioName}</span> için hazırladığımız özel demo bağlantısını ve stüdyo uzmanımızın randevu takvimini <span className="font-semibold text-[#252525]">{formData.email}</span> adresinize ilettik.
+                Teşekkürler <span className="font-semibold text-[#252525]">{formData.name}</span>. Demo bilgileriniz WhatsApp’ta hazırlandı. Açılan sohbette <span className="font-semibold text-[#252525]">Gönder</span> düğmesine basarak talebinizi Fitbase ekibine iletebilirsiniz.
               </p>
 
               <div className="bg-[#FAF7F2] border border-[#E7E7E2] rounded-2xl p-4 max-w-md mx-auto text-left text-xs space-y-2">

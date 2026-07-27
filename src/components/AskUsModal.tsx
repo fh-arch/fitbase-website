@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Send, CircleDot, Smartphone, CheckCircle2 } from 'lucide-react';
 import { AskUsModalProps } from '../types';
+import { openWhatsAppMessage } from '../whatsapp';
 
 export const AskUsModal: React.FC<AskUsModalProps> = ({ isOpen, onClose }) => {
   const [email, setEmail] = useState('');
@@ -11,6 +12,14 @@ export const AskUsModal: React.FC<AskUsModalProps> = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const message = [
+      'Merhaba Fitbase, web siteniz üzerinden iletişime geçiyorum.',
+      '',
+      `E-posta: ${email.trim()}`,
+      `Mesaj: ${question.trim()}`
+    ].join('\n');
+
+    openWhatsAppMessage(message);
     setSent(true);
   };
 
@@ -81,16 +90,16 @@ export const AskUsModal: React.FC<AskUsModalProps> = ({ isOpen, onClose }) => {
                   className="w-full py-3 rounded-xl bg-[#252525] text-white text-xs font-semibold hover:bg-black transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Send className="w-3.5 h-3.5 text-[#18F28D]" />
-                  <span>Sorunu Gönder & Erken Erişime Katıl</span>
+                  <span>WhatsApp’tan Gönder</span>
                 </button>
               </form>
             </>
           ) : (
             <div className="text-center py-6 space-y-3">
               <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-              <h4 className="text-lg font-bold text-[#252525]">Mesajın Alındı!</h4>
+              <h4 className="text-lg font-bold text-[#252525]">WhatsApp mesajın hazır!</h4>
               <p className="text-xs text-[#5F6368]">
-                İlgin için teşekkürler! fitbase app lansman tarihi yaklaştığında <span className="font-semibold text-[#252525]">{email}</span> adresine özel duyuru göndereceğiz.
+                Açılan WhatsApp sohbetinde <span className="font-semibold text-[#252525]">Gönder</span> düğmesine basarak mesajını Fitbase ekibine iletebilirsin.
               </p>
               <button
                 onClick={onClose}
