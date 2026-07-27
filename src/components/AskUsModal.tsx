@@ -24,20 +24,23 @@ export const AskUsModal: React.FC<AskUsModalProps> = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs animate-fade-in">
+    <div className="modal-backdrop fixed inset-0 z-50 flex bg-black/50 backdrop-blur-xs animate-fade-in" onClick={onClose}>
       <div 
-        className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-[#E7E7E2]"
+        className="modal-panel relative w-full max-w-md bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-[#E7E7E2]"
         onClick={(e) => e.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="ask-us-modal-title"
       >
         <button 
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-full text-zinc-400 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
+          className="absolute top-3 right-3 sm:top-5 sm:right-5 grid h-11 w-11 place-items-center rounded-full bg-white/90 text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100 transition-colors"
           aria-label="Kapat"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="p-6 md:p-8">
+        <div className="p-4 pt-6 sm:p-6 md:p-8">
           {!sent ? (
             <>
               <div className="flex items-center gap-2 mb-2">
@@ -49,7 +52,7 @@ export const AskUsModal: React.FC<AskUsModalProps> = ({ isOpen, onClose }) => {
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold text-[#252525]">
+              <h3 id="ask-us-modal-title" className="pr-10 text-xl font-bold text-[#252525]">
                 Yakında fitbase app geliyor!
               </h3>
               <p className="text-xs text-[#5F6368] mt-1.5 mb-5 leading-relaxed">

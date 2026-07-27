@@ -75,9 +75,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <article>
           <header className="border-b border-[#E7E7E2] bg-[#D9FDEE] py-14 md:py-20">
             <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-              <nav aria-label="Sayfa yolu" className="mb-8 flex flex-wrap items-center gap-2 text-xs text-[#5F6368]"><a href="/">Ana Sayfa</a><span>/</span><a href="/blog">Blog</a><span>/</span><span aria-current="page">{article.category}</span></nav>
+              <nav aria-label="Sayfa yolu" className="mb-8 flex flex-wrap items-center gap-2 text-xs text-[#5F6368]"><a href="/" className="inline-flex min-h-11 items-center">Ana Sayfa</a><span aria-hidden="true">/</span><a href="/blog" className="inline-flex min-h-11 items-center">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{article.category}</span></nav>
               <div className="flex flex-wrap items-center gap-3 text-xs"><span className="rounded-lg bg-[#18F28D] px-3 py-1 font-bold">{article.category}</span><span className="inline-flex items-center gap-1 text-[#5F6368]"><Clock className="h-4 w-4" />{article.readTime}</span><time dateTime={article.published} className="text-[#5F6368]">24 Temmuz 2026</time></div>
-              <h1 className="mt-6 text-4xl font-black tracking-[-0.04em] text-[#252525] sm:text-5xl md:text-6xl">{article.title}</h1>
+              <h1 className="mt-6 text-[2.35rem] font-black leading-[1.08] tracking-[-0.04em] text-[#252525] sm:text-5xl md:text-6xl">{article.title}</h1>
               <p className="mt-6 text-lg leading-relaxed text-[#5F6368]">{article.description}</p>
               <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-[#252525]"><BookOpen className="h-5 w-5 text-emerald-700" /> Fitbase Editoryal Ekibi</div>
             </div>
@@ -100,7 +100,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <ul className="mt-6 space-y-4">{article.takeaways.map((item) => <li key={item} className="flex gap-3 text-sm leading-relaxed text-zinc-200"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#18F28D]" />{item}</li>)}</ul>
               </section>
 
-              <section className="mt-14" aria-labelledby="sss"><h2 id="sss" className="text-3xl font-extrabold text-[#252525]">Sık sorulan sorular</h2><div className="mt-6 space-y-4">{article.faq.map((item) => <details key={item.question} className="rounded-2xl border border-[#E7E7E2] bg-white p-5" open><summary className="cursor-pointer font-bold text-[#252525]">{item.question}</summary><p className="mt-3 text-sm leading-7 text-[#5F6368]">{item.answer}</p></details>)}</div></section>
+              <section className="mt-14" aria-labelledby="sss"><h2 id="sss" className="text-3xl font-extrabold text-[#252525]">Sık sorulan sorular</h2><div className="mt-6 space-y-4">{article.faq.map((item) => <details key={item.question} className="rounded-2xl border border-[#E7E7E2] bg-white p-5" open><summary className="flex min-h-11 cursor-pointer items-center font-bold text-[#252525]">{item.question}</summary><p className="mt-3 text-sm leading-7 text-[#5F6368]">{item.answer}</p></details>)}</div></section>
 
               <section className="mt-14 border-t border-[#E7E7E2] pt-8" aria-labelledby="kaynaklar"><h2 id="kaynaklar" className="text-xl font-extrabold text-[#252525]">Kaynaklar ve sağlık notu</h2><p className="mt-3 text-sm leading-7 text-[#5F6368]">Bu içerik genel bilgilendirme amaçlıdır; tanı veya kişisel tedavi önerisi değildir. Belirti, hastalık, gebelik veya özel beslenme gereksiniminde yetkili sağlık profesyoneline başvurun.</p><ul className="mt-4 space-y-2">{article.sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-emerald-800">{source.label}<ExternalLink className="h-3.5 w-3.5" /></a></li>)}</ul></section>
             </div>

@@ -31,7 +31,7 @@ export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDe
         </div>
 
         {/* Large Rounded Charcoal Tab Bar */}
-        <div className="p-2 bg-[#252525] rounded-3xl shadow-xl max-w-5xl mx-auto mb-12 overflow-x-auto no-scrollbar">
+        <div className="mobile-scroll-row p-2 bg-[#252525] rounded-3xl shadow-xl max-w-5xl mx-auto mb-12 overflow-x-auto" role="tablist" aria-label="Fitbase özellikleri">
           <div className="flex items-center justify-start sm:justify-center gap-1.5 min-w-max">
             {FEATURE_TABS.map((tab) => {
               const isActive = tab.id === activeTabId;
@@ -39,6 +39,8 @@ export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDe
                 <button
                   key={tab.id}
                   onClick={() => setActiveTabId(tab.id)}
+                  role="tab"
+                  aria-selected={isActive}
                   className={`px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-semibold transition-all cursor-pointer whitespace-nowrap ${
                     isActive
                       ? 'bg-[#18F28D] text-[#252525] shadow-md scale-[1.02]'
@@ -86,7 +88,7 @@ export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDe
               <div className="pt-4">
                 <button
                   onClick={onOpenDemo}
-                  className="px-6 py-3 rounded-xl bg-[#252525] text-white text-xs font-semibold hover:bg-black transition-all flex items-center gap-2 cursor-pointer shadow-sm group"
+                  className="min-h-11 w-full sm:w-auto px-6 py-3 rounded-xl bg-[#252525] text-white text-xs font-semibold hover:bg-black transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm group"
                 >
                   <span>{activeTabData.label} Modülünü İncele</span>
                   <ChevronRight className="w-4 h-4 text-[#18F28D] group-hover:translate-x-1 transition-transform" />

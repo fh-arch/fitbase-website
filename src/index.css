@@ -26,6 +26,7 @@
 
 html {
   scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
 }
 
 .skip-link {
@@ -67,6 +68,16 @@ html {
 
 button, a {
   -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
 }
 
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
@@ -114,6 +125,37 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .float-card { animation: float-soft 4.5s ease-in-out infinite; }
 .float-card-delayed { animation: float-soft 5s .8s ease-in-out infinite; }
 
+.mobile-scroll-row {
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-scroll-row::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-scroll-row > * > * {
+  scroll-snap-align: start;
+}
+
+.modal-backdrop {
+  align-items: flex-start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: max(.5rem, env(safe-area-inset-top)) max(.5rem, env(safe-area-inset-right))
+    max(.5rem, env(safe-area-inset-bottom)) max(.5rem, env(safe-area-inset-left));
+}
+
+.modal-panel {
+  max-height: calc(100dvh - 1rem);
+  margin: auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
 main section {
   position: relative;
 }
@@ -130,6 +172,43 @@ main section :is(.rounded-2xl, .rounded-3xl) {
 @media (hover: hover) {
   main section :is(.rounded-2xl, .rounded-3xl):hover {
     border-color: rgba(24, 242, 141, .55);
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  main section {
+    scroll-margin-top: 5rem;
+  }
+
+  button,
+  input,
+  select {
+    min-height: 44px;
+  }
+
+  textarea {
+    min-height: 88px;
+  }
+
+  a[class*="rounded"],
+  a[class*="inline-flex"],
+  header nav a,
+  footer a {
+    min-height: 44px;
+  }
+
+  footer a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .prose-fitbase p {
+    font-size: 1rem;
+    line-height: 1.8;
   }
 }
 

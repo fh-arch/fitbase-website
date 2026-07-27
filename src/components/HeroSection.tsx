@@ -7,7 +7,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
   return (
-    <section id="about" className="relative bg-[#D9FDEE] pt-10 pb-20 md:pt-16 md:pb-28 overflow-hidden border-b border-[#E7E7E2]">
+    <section id="about" className="relative bg-[#D9FDEE] pt-8 pb-16 sm:pt-10 sm:pb-20 md:pt-16 md:pb-28 overflow-hidden border-b border-[#E7E7E2]">
       
       {/* Background Soft Abstract Shapes */}
       <div className="absolute inset-0 pointer-events-none">
@@ -18,14 +18,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-10 lg:gap-14 items-center">
           <div className="text-center lg:text-left hero-copy">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-[#C9D8C5] shadow-xs mb-6">
+            <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-white/80 border border-[#C9D8C5] shadow-xs mb-5 sm:mb-6">
               <CircleDot className="w-3.5 h-3.5 text-teal-800" />
-              <span className="text-xs font-bold uppercase tracking-wider text-[#252525]">
-            FITNESS YÖNETİM YAZILIMI
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.12em] sm:tracking-wider text-[#252525]">
+                FITNESS YÖNETİM YAZILIMI
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-[#252525] tracking-[-0.045em] leading-[1.02] mb-6">
+            <h1 className="text-[2.35rem] sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-[#252525] tracking-[-0.045em] leading-[1.04] mb-5 sm:mb-6">
               Stüdyon büyürken <span className="relative whitespace-nowrap">kontrol sende.<span className="absolute left-0 -bottom-1 h-2 w-full rounded-full bg-[#18F28D]/55 -z-10" /></span>
             </h1>
 
@@ -76,20 +76,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#101814]/35 via-transparent to-transparent" />
             </div>
-            <div className="float-card absolute -left-3 sm:-left-8 bottom-6 rounded-2xl bg-white/95 p-4 shadow-xl border border-white backdrop-blur-md">
+            <div className="float-card absolute left-2 sm:-left-8 bottom-3 sm:bottom-6 rounded-2xl bg-white/95 p-3 sm:p-4 shadow-xl border border-white backdrop-blur-md">
               <div className="flex items-center gap-3">
                 <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#18F28D]"><TrendingUp className="h-5 w-5" /></span>
                 <div><strong className="block text-sm">+%18 büyüme</strong><span className="text-[11px] text-[#5F6368]">bu ayın performansı</span></div>
               </div>
             </div>
-            <div className="float-card-delayed absolute -right-2 sm:-right-6 top-6 rounded-2xl bg-[#252525]/95 p-4 text-white shadow-xl backdrop-blur-md">
+            <div className="float-card-delayed absolute right-2 sm:-right-6 top-3 sm:top-6 rounded-2xl bg-[#252525]/95 p-3 sm:p-4 text-white shadow-xl backdrop-blur-md">
               <div className="flex items-center gap-2 text-xs font-semibold"><span className="h-2.5 w-2.5 rounded-full bg-[#18F28D]" /> Canlı stüdyo durumu</div>
               <p className="mt-1 text-[11px] text-zinc-300">8 seans • %94 doluluk</p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-[#5F6368] font-medium mt-12 mb-12">
+        <div className="grid grid-cols-1 gap-3 text-xs text-[#5F6368] font-medium mt-10 mb-10 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-6 sm:mt-12 sm:mb-12">
           {['Kredi kartı gerekmez', '15 dakikada hızlı kurulum', 'Ücretsiz veri taşıma desteği'].map((item) => (
             <span key={item} className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-teal-800" />{item}
@@ -101,20 +101,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
         <div className="product-panel relative mt-4 mx-auto max-w-5xl bg-white/90 backdrop-blur-md rounded-3xl p-4 sm:p-6 shadow-2xl border border-white text-left">
           
           {/* Mockup Header Bar */}
-          <div className="flex items-center justify-between pb-4 mb-4 border-b border-[#E7E7E2]">
-            <div className="flex items-center gap-3">
+          <div className="flex items-start justify-between gap-2 pb-4 mb-4 border-b border-[#E7E7E2]">
+            <div className="flex min-w-0 items-center gap-2 sm:gap-3">
               <div className="flex gap-1.5">
                 <span className="w-3 h-3 rounded-full bg-rose-400 inline-block" />
                 <span className="w-3 h-3 rounded-full bg-amber-400 inline-block" />
                 <span className="w-3 h-3 rounded-full bg-emerald-400 inline-block" />
               </div>
-              <span className="text-xs font-semibold text-[#252525] bg-[#FAF7F2] px-3 py-1 rounded-lg border border-[#E7E7E2]">
-                fitbase.app / serene-pilates-studio
+              <span className="min-w-0 truncate text-[10px] sm:text-xs font-semibold text-[#252525] bg-[#FAF7F2] px-2 sm:px-3 py-1 rounded-lg border border-[#E7E7E2]">
+                fitbase.app / stüdyo-paneli
               </span>
             </div>
             
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1 text-[11px] font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+            <div className="flex shrink-0 items-center gap-2">
+              <span className="inline-flex items-center gap-1 text-[9px] sm:text-[11px] font-semibold px-2 sm:px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
                 Canlı Stüdyo Durumu
               </span>

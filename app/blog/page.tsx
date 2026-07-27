@@ -58,11 +58,11 @@ export default function BlogPage() {
         <section className="border-b border-[#E7E7E2] bg-[#D9FDEE] py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <nav aria-label="Sayfa yolu" className="mb-7 flex items-center gap-2 text-xs text-[#5F6368]">
-              <a href="/" className="hover:text-[#252525]">Ana Sayfa</a><span>/</span><span aria-current="page">Blog</span>
+              <a href="/" className="inline-flex min-h-11 items-center hover:text-[#252525]">Ana Sayfa</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span>
             </nav>
             <div className="max-w-4xl">
               <span className="mb-5 inline-flex items-center gap-2 rounded-full bg-[#18F28D] px-4 py-2 text-xs font-bold uppercase tracking-wider"><BookOpen className="h-4 w-4" /> Fitbase bilgi merkezi</span>
-              <h1 className="text-4xl font-black tracking-[-0.04em] text-[#252525] sm:text-5xl md:text-6xl">Daha güçlü, dengeli ve sürdürülebilir bir yaşam için 20 rehber</h1>
+              <h1 className="text-[2.35rem] font-black leading-[1.08] tracking-[-0.04em] text-[#252525] sm:text-5xl md:text-6xl">Daha güçlü, dengeli ve sürdürülebilir bir yaşam için 20 rehber</h1>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#5F6368]">
                 Beslenmeden uykuya, kuvvet antrenmanından longevity yaklaşımına, yoga ve pilatesten günlük rutinlere kadar merak edilen soruları açık cevaplar ve uygulanabilir adımlarla ele alıyoruz.
               </p>
@@ -91,7 +91,7 @@ export default function BlogPage() {
                     <h2 className="mt-3 text-xl font-extrabold leading-snug text-[#252525] group-hover:text-emerald-700">{article.title}</h2>
                     <p className="mt-3 text-sm leading-relaxed text-[#5F6368]">{article.description}</p>
                   </div>
-                  <a href={`/blog/${article.slug}`} className="mt-6 inline-flex items-center gap-2 border-t border-[#E7E7E2] pt-4 text-sm font-bold text-[#252525]">
+                  <a href={`/blog/${article.slug}`} className="mt-6 inline-flex min-h-11 items-center gap-2 border-t border-[#E7E7E2] pt-4 text-sm font-bold text-[#252525]">
                     Rehberi oku <ArrowRight className="h-4 w-4 text-emerald-700 transition-transform group-hover:translate-x-1" />
                   </a>
                 </article>
@@ -106,9 +106,9 @@ export default function BlogPage() {
 }
 
 export function BlogHeader() {
-  return <header className="sticky top-0 z-40 border-b border-[#E7E7E2] bg-white/90 backdrop-blur-xl"><div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"><a href="/" aria-label="Fitbase ana sayfa"><img src="/fitbase-logo.png" alt="Fitbase" width="188" height="56" className="h-[45px] w-auto" /></a><nav className="flex items-center gap-3"><a href="/blog" className="hidden text-sm font-bold text-[#252525] sm:block">Blog</a><a href="/#pricing" className="rounded-xl bg-[#252525] px-5 py-3 text-xs font-bold text-white hover:bg-black">Demo al</a></nav></div></header>;
+  return <header className="sticky top-0 z-40 border-b border-[#E7E7E2] bg-white/90 backdrop-blur-xl"><div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8"><a href="/" aria-label="Fitbase ana sayfa" className="flex min-h-11 items-center"><img src="/fitbase-logo.png" alt="Fitbase" width="188" height="56" className="h-[45px] w-auto max-w-[188px]" /></a><nav className="flex items-center gap-2 sm:gap-3"><a href="/blog" className="hidden min-h-11 items-center text-sm font-bold text-[#252525] sm:flex">Blog</a><a href="/#pricing" className="inline-flex min-h-11 items-center rounded-xl bg-[#252525] px-4 py-3 text-xs font-bold text-white hover:bg-black sm:px-5">Demo al</a></nav></div></header>;
 }
 
 export function BlogFooter() {
-  return <footer className="border-t border-[#E7E7E2] bg-white py-8"><div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-xs text-[#5F6368] sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"><span>© 2026 Fitbase • Sağlık içerikleri genel bilgilendirme amaçlıdır.</span><a href="/" className="inline-flex items-center gap-2 font-bold text-[#252525]"><ArrowLeft className="h-4 w-4" /> Ana sayfaya dön</a></div></footer>;
+  return <footer className="border-t border-[#E7E7E2] bg-white py-8"><div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-xs text-[#5F6368] sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8"><span>© 2026 Fitbase • Sağlık içerikleri genel bilgilendirme amaçlıdır.</span><a href="/" className="inline-flex min-h-11 items-center gap-2 font-bold text-[#252525]"><ArrowLeft className="h-4 w-4" /> Ana sayfaya dön</a></div></footer>;
 }
