@@ -159,6 +159,21 @@ export function SubProcessorTable({ entity }: { entity: LegalEntity }) {
 }
 
 /**
+ * The contact address, or a visible admission that there isn't one.
+ *
+ * Repeated in enough places that inlining the null check each time invites one of them to be
+ * written as `entity.contactEmail!` on a tired afternoon, which is how a `mailto:null` link
+ * reaches production.
+ */
+export function ContactLink({ entity }: { entity: LegalEntity }) {
+  if (!entity.contactEmail) {
+    return <strong className="text-[#B42318]">(iletişim adresi girilmedi)</strong>;
+  }
+
+  return <a href={`mailto:${entity.contactEmail}`}>{entity.contactEmail}</a>;
+}
+
+/**
  * The KVKK art. 9 statement, rendered wherever a document describes transfers.
  *
  * Shared rather than written twice, because the privacy policy and the KVKK notice have to agree
