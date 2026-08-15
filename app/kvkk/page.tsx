@@ -5,7 +5,7 @@ import {
   LegalPage,
   SubProcessorTable,
 } from "../../src/components/LegalPage";
-import { legalEntity } from "../../src/legalEntity";
+import { isCrossBorderTransfer, legalEntity } from "../../src/legalEntity";
 
 export const metadata: Metadata = {
   title: "KVKK Aydınlatma Metni",
@@ -76,6 +76,48 @@ export default function KvkkPage() {
         Bunlar dışında, yalnızca yetkili kamu kurum ve kuruluşlarına, mevzuatın gerektirdiği hâllerde
         ve gerektirdiği ölçüde aktarım yapılır.
       </p>
+
+      {/*
+        Rendered only when data actually leaves Türkiye. A standing art. 9 section on a document
+        describing a purely domestic setup would be a false statement in the other direction, and
+        the section is long enough that nobody would notice it had stopped applying.
+      */}
+      {isCrossBorderTransfer(entity) && (
+        <>
+          <h2>Yurt dışına aktarım</h2>
+          <p>
+            Yukarıda sayılan sağlayıcıların bir kısmı Türkiye dışında bulunduğundan, kişisel
+            verileriniz yurt dışına aktarılmaktadır. Kanun&apos;un 9. maddesi bu aktarımı ayrı bir
+            şarta bağlar; aşağıdaki esaslar uygulanır.
+          </p>
+          <ul>
+            <li>
+              Aktarım yalnızca yukarıdaki tabloda sayılan taraflara ve yalnızca tabloda belirtilen
+              amaçlarla yapılır. Tabloda yer almayan hiçbir yurt dışı tarafa aktarım yapılmaz.
+            </li>
+            <li>
+              Aktarım, hizmetin teknik olarak sunulabilmesi için zorunludur. Pazarlama, profilleme,
+              reklam hedefleme veya üçüncü taraflara satış amacı taşımaz.
+            </li>
+            <li>
+              Aktarılan veri, ilgili sağlayıcının hizmetini yerine getirebilmesi için gereken
+              asgari veriyle sınırlıdır. Barındırma sağlayıcısı verileri yalnızca saklar; içeriğe
+              erişmez ve kendi amaçları için kullanmaz.
+            </li>
+            <li>
+              Aktarım, Kanun&apos;un öngördüğü uygun güvencelere dayanır. Aktarımın yapıldığı
+              taraflarla standart sözleşme akdedilir ve bu sözleşme, imzalanmasından itibaren beş
+              iş günü içinde Kişisel Verileri Koruma Kurulu&apos;na bildirilir.
+            </li>
+          </ul>
+          <p>
+            Kanun&apos;un 11. maddesi size, kişisel verilerinizin yurt dışında aktarıldığı üçüncü
+            kişileri öğrenme hakkı verir. Yukarıdaki tablo bu bilgiyi güncel olarak içerir.
+            Sağlayıcı listesi değiştiğinde bu sayfa güncellenir ve sayfanın altındaki tarih
+            yenilenir.
+          </p>
+        </>
+      )}
 
       <h2>Toplama yöntemi</h2>
       <p>
