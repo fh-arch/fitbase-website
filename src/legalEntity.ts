@@ -78,18 +78,64 @@ export const legalEntity: LegalEntity = {
   // requests and spam. Whoever reads this box has to recognise one.
   contactEmail: "info@fitbase.com.tr",
 
-  // TODO: the country the VPS is in. If it is outside Türkiye, every one of these documents needs
-  // its art. 9 transfer sentence to say so.
-  hostingRegion: null,
+  // Outside Türkiye, so every transfer of personal data to it is a KVKK art. 9 cross-border
+  // transfer. The documents say so explicitly rather than burying it in a provider table —
+  // art. 11 gives the data subject the right to know which countries their data reaches, and a
+  // reader should not have to infer it from a company name they may not recognise.
+  hostingRegion: "Almanya",
 
   mersisNumber: null,
   verbisNumber: null,
 
-  // TODO: at minimum the transactional email provider — verification and invitation mail cannot
-  // be delivered without one, and if it sits outside Türkiye it is an art. 9 transfer that has to
-  // be disclosed here by name.
-  subProcessors: [],
+  // Only what actually processes personal data today. The list is deliberately short because the
+  // site is: no analytics, no tag manager, no font CDN, no form backend. Adding a plausible-
+  // sounding entry would be worse than omitting one, because a data subject cannot verify it and
+  // a regulator can.
+  //
+  // Not listed, and each for a reason:
+  //  - Transactional email. No production SMTP provider is configured yet (backend decision D22 is
+  //    open). It goes in the moment one is chosen — verification and invitation mail cannot be
+  //    delivered without it, so this list is incomplete from that day forward until it is added.
+  //  - Payment processing. The product records payments; it does not take them.
+  subProcessors: [
+    {
+      name: "Contabo GmbH",
+      purpose: "Sunucu barındırma, uygulama ve veritabanı altyapısı",
+      region: "Almanya",
+    },
+    {
+      // Easy to leave out, because nobody installs it as a feature. It sits in front of the
+      // domain, terminates TLS and therefore sees every visitor's IP address and request path —
+      // which makes it a processor of personal data whether or not anyone thinks of it as one.
+      name: "Cloudflare, Inc.",
+      purpose:
+        "Alan adı yönlendirme, TLS sonlandırma, saldırı koruması ve içerik dağıtımı. "
+        + "Ziyaretçi IP adresleri bu kapsamda işlenir.",
+      region: "ABD ve küresel sunucu ağı",
+    },
+    {
+      name: "Meta Platforms Ireland Ltd.",
+      purpose:
+        "Siteden WhatsApp üzerinden iletişim ve demo talebi. Yalnızca ziyaretçi WhatsApp "
+        + "butonunu kullanmayı seçtiğinde devreye girer.",
+      region: "İrlanda (AB)",
+    },
+  ],
 };
+
+/**
+ * Whether personal data leaves Türkiye.
+ *
+ * Drives the KVKK art. 9 notice on the documents. Kept as a function over the region string
+ * rather than a stored boolean so the two cannot contradict each other — a stored flag reading
+ * `false` beside a region reading "Almanya" is exactly the kind of quiet inconsistency that
+ * survives review.
+ */
+export function isCrossBorderTransfer(entity: LegalEntity): boolean {
+  if (!entity.hostingRegion) return false;
+
+  return entity.hostingRegion.trim().toLocaleLowerCase("tr-TR") !== "türkiye";
+}
 
 /** Fields the documents cannot honestly render without. */
 export function missingLegalValues(entity: LegalEntity): string[] {

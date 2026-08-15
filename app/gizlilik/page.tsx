@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { ControllerTable, LegalPage, SubProcessorTable } from "../../src/components/LegalPage";
+import {
+  ControllerTable,
+  CrossBorderNotice,
+  LegalPage,
+  SubProcessorTable,
+} from "../../src/components/LegalPage";
 import { legalEntity } from "../../src/legalEntity";
 
 export const metadata: Metadata = {
@@ -130,15 +135,7 @@ export default function PrivacyPage() {
       </table>
 
       <h2>5. Aktarım ve hizmet sağlayıcılar</h2>
-      <p>
-        {entity.hostingRegion ? (
-          <>Sunucular {entity.hostingRegion} bölgesinde barındırılır.</>
-        ) : (
-          <strong className="text-[#B42318]">
-            Sunucuların barındırıldığı bölge henüz belirtilmedi.
-          </strong>
-        )}
-      </p>
+      <CrossBorderNotice entity={entity} />
       <SubProcessorTable entity={entity} />
       <p>
         Kişisel veriler pazarlama amacıyla üçüncü taraflara satılmaz, kiralanmaz ve devredilmez.

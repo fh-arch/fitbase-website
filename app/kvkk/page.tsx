@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { ControllerTable, LegalPage, SubProcessorTable } from "../../src/components/LegalPage";
+import {
+  ControllerTable,
+  CrossBorderNotice,
+  LegalPage,
+  SubProcessorTable,
+} from "../../src/components/LegalPage";
 import { legalEntity } from "../../src/legalEntity";
 
 export const metadata: Metadata = {
@@ -65,6 +70,7 @@ export default function KvkkPage() {
       </p>
 
       <h2>Kimlere aktarılır</h2>
+      <CrossBorderNotice entity={entity} />
       <SubProcessorTable entity={entity} />
       <p>
         Bunlar dışında, yalnızca yetkili kamu kurum ve kuruluşlarına, mevzuatın gerektirdiği hâllerde

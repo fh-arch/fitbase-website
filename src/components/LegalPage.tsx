@@ -1,6 +1,11 @@
 import React from "react";
 import { AlertTriangle, ArrowLeft } from "lucide-react";
-import { legalEntity, missingLegalValues, type LegalEntity } from "../legalEntity";
+import {
+  isCrossBorderTransfer,
+  legalEntity,
+  missingLegalValues,
+  type LegalEntity,
+} from "../legalEntity";
 
 /**
  * The chrome and typography every legal document shares.
@@ -150,6 +155,30 @@ export function SubProcessorTable({ entity }: { entity: LegalEntity }) {
         ))}
       </tbody>
     </table>
+  );
+}
+
+/**
+ * The KVKK art. 9 statement, rendered wherever a document describes transfers.
+ *
+ * Shared rather than written twice, because the privacy policy and the KVKK notice have to agree
+ * on this and they are edited at different times by different people. Two copies of a sentence
+ * about where data goes is two chances to be wrong about it.
+ *
+ * Renders nothing when hosting is domestic — the sentence would then be false, and a document
+ * that claims a transfer which does not happen is as wrong as one that hides a transfer that does.
+ */
+export function CrossBorderNotice({ entity }: { entity: LegalEntity }) {
+  if (!isCrossBorderTransfer(entity)) return null;
+
+  return (
+    <p>
+      Sunucular <strong>{entity.hostingRegion}</strong> ülkesinde bulunmaktadır. Bu, kişisel
+      verilerinizin <strong>yurt dışına aktarıldığı</strong> anlamına gelir ve 6698 sayılı
+      Kanun&apos;un 9. maddesi kapsamındadır. Aktarım, hizmetin sunulabilmesi için zorunludur ve
+      yalnızca aşağıdaki tabloda sayılan taraflara, yine tabloda belirtilen amaçlarla yapılır.
+      Verileriniz bu amaçların dışında yurt dışındaki başka bir tarafa aktarılmaz.
+    </p>
   );
 }
 
