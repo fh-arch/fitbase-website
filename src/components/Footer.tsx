@@ -73,8 +73,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
               <li><a href="#faq" className="hover:text-[#252525] transition-colors">Sıkça Sorulan Sorular (SSS)</a></li>
               <li><a href="#" onClick={(e) => { e.preventDefault(); alert('7/24 Canlı Destek ve rehberler için fitbase Müşteri Hizmetleri ile iletişime geçebilirsiniz.'); }} className="hover:text-[#252525] transition-colors">Yardım Merkezi</a></li>
               <li><button onClick={onOpenStaffLogin} className="hover:text-[#252525] transition-colors font-semibold text-[#252525] cursor-pointer">Personel Girişi ↗</button></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); alert('Gizlilik Politikası: Verileriniz KVKK ve GDPR uyumlu sunucularda yüksek koruma standartlarıyla tutulur.'); }} className="hover:text-[#252525] transition-colors">Gizlilik Politikası</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); alert('Kullanım Şartları: fitbase SaaS lisans sözleşmesi standartlarını karşılar.'); }} className="hover:text-[#252525] transition-colors">Kullanım Şartları</a></li>
+              {/*
+                Real pages, not alert() summaries.
+
+                These were one-line alerts describing a policy that did not exist. KVKK art. 10
+                requires the controller be identified to the data subject in writing, and Meta's
+                App Review opens the privacy policy URL as its first check — a JavaScript dialog
+                fails both, and fails them silently because the link looks present.
+              */}
+              <li><a href="/gizlilik" className="hover:text-[#252525] transition-colors">Gizlilik Politikası</a></li>
+              <li><a href="/kosullar" className="hover:text-[#252525] transition-colors">Kullanım Koşulları</a></li>
+              <li><a href="/kvkk" className="hover:text-[#252525] transition-colors">KVKK Aydınlatma Metni</a></li>
             </ul>
           </div>
 
