@@ -1,4 +1,5 @@
 import React from 'react';
+import { legalEntity } from '../legalEntity';
 
 interface FooterProps {
   onOpenStaffLogin: () => void;
@@ -89,8 +90,42 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
 
         </div>
 
+        {/*
+          The trade identity, read from `src/legalEntity.ts` rather than typed here.
+
+          Two obligations meet in this block and both want the same values. Turkish e-commerce law
+          (6563 md. 3) requires a service provider to disclose its trade name, address and contact
+          details in a form a visitor can reach without asking. Meta's Business Verification
+          separately compares the entity on the submitted registry documents against the entity the
+          website presents — and a site whose only self-identification is a lowercase brand and a
+          copyright line gives a reviewer nothing to compare, which is among the commonest
+          rejections. Rendered from the shared constant so it cannot drift from the legal pages.
+        */}
+        <div className="pt-8 pb-6 border-b border-[#E7E7E2] space-y-1.5 text-[11px] leading-relaxed">
+          <p className="font-semibold text-[#252525]">{legalEntity.legalName}</p>
+          <p>{legalEntity.address}</p>
+          <p className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span>
+              Tel:{' '}
+              <a href={`tel:${legalEntity.phone.replace(/\s/g, '')}`} className="hover:text-[#252525] transition-colors">
+                {legalEntity.phone}
+              </a>
+            </span>
+            {legalEntity.contactEmail && (
+              <span>
+                E-posta:{' '}
+                <a href={`mailto:${legalEntity.contactEmail}`} className="hover:text-[#252525] transition-colors">
+                  {legalEntity.contactEmail}
+                </a>
+              </span>
+            )}
+            <span>VKN: {legalEntity.taxNumber}</span>
+            {legalEntity.mersisNumber && <span>MERSİS: {legalEntity.mersisNumber}</span>}
+          </p>
+        </div>
+
         {/* Bottom copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
           <p>© 2026 fitbase. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
             <span>KVKK Uyumlu</span>

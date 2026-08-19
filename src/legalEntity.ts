@@ -67,7 +67,16 @@ export interface SubProcessor {
 }
 
 export const legalEntity: LegalEntity = {
-  legalName: "HAFA BİLİŞİM DANIŞMANLIK GIDA MAK.İÇ VE DIŞ TİC.LTD.ŞTİ.",
+  // Unabbreviated on purpose, and corrected 2026-08-19 from "… GIDA MAK.İÇ VE DIŞ TİC.LTD.ŞTİ.".
+  // Meta's Business Verification panel renders the name it read from the trade-registry documents
+  // as "HAFA BILISIM DANISMANLIK GIDA MAKINA IC VE DIS TICARET LIMITED SIRKETI" — full words, no
+  // abbreviations. The comparison Meta makes is against this string, and §7 of the backend's
+  // meta-onboarding register records a mismatched trade name as the most common rejection.
+  //
+  // The Turkish spelling is restored from Meta's ASCII rendering; every word agrees with how this
+  // file already spelled the ones it did not abbreviate (BİLİŞİM, DANIŞMANLIK, GIDA, İÇ, DIŞ).
+  // If the registry gazette writes MAKINA with a dotless I, this is the one character to change.
+  legalName: "HAFA BİLİŞİM DANIŞMANLIK GIDA MAKİNA İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
   address:
     "Alsancak Mah. Kıbrıs Şehitleri Cad. Kazmirci İş Merkezi No: 20 İç Kapı No: 502, Konak / İzmir 35250, Türkiye",
   phone: "+90 533 154 35 15",
