@@ -79,7 +79,7 @@ export const legalEntity: LegalEntity = {
   legalName: "HAFA BİLİŞİM DANIŞMANLIK GIDA MAKİNA İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ",
   address:
     "Alsancak Mah. Kıbrıs Şehitleri Cad. Kazmirci İş Merkezi No: 20 İç Kapı No: 502, Konak / İzmir 35250, Türkiye",
-  phone: "+90 533 154 35 15",
+  phone: "+90 541 814 13 96",
   taxNumber: "4540617469",
 
   // A shared inbox by the operator's decision. Worth knowing what that costs: a KVKK art. 11
@@ -93,7 +93,7 @@ export const legalEntity: LegalEntity = {
   // reader should not have to infer it from a company name they may not recognise.
   hostingRegion: "Almanya",
 
-  mersisNumber: null,
+  mersisNumber: "0454061746900001",
   verbisNumber: null,
 
   // Only what actually processes personal data today. The list is deliberately short because the
