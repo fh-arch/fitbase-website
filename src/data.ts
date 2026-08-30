@@ -12,26 +12,26 @@ export const FEATURE_TABS: FeatureTabData[] = [
   {
     id: 'crm',
     label: 'Üye CRM',
-    title: 'Her üyeyi ve satış fırsatını tek profilde yönetin',
-    description: 'İlk iletişimden aktif üyeliğe, ders geçmişinden özel notlara kadar tüm üye yolculuğunu fitness odaklı CRM ekranında görün; hiçbir lead, görev veya yenileme fırsatı kaybolmasın.',
+    title: 'Sosyal medya konuşmalarını satış fırsatına dönüştürün',
+    description: 'WhatsApp Business, Instagram DM ve Facebook Messenger’dan gelen yazışmaları tek gelen kutusunda görün; her konuşmayı kaynak bilgisiyle CRM adayına dönüştürün ve satış ekibine atayın.',
     bullets: [
-      'Lead, deneme dersi ve satış fırsatı takibi',
-      'Üye profili, iletişim geçmişi ve özel notlar',
-      'Segmentler, görevler ve otomatik takip hatırlatmaları',
-      'Paket yenileme, devamsızlık ve risk sinyalleri'
+      'WhatsApp Business, Instagram DM ve Messenger için birleşik gelen kutusu',
+      'Yeni konuşmadan otomatik potansiyel müşteri kaydı',
+      'Kaynak kanal, görüşme geçmişi ve sorumlu kişi',
+      'Satış aşaması, görev ve geri dönüş takibi'
     ],
     mockupData: {
-      badge: 'Fitness CRM & Üye Yaşam Döngüsü',
+      badge: 'Sosyal Mesajlaşma & Fitness CRM',
       metrics: [
-        { label: 'Aktif Lead', value: '48 kişi', trend: '12 yeni bu hafta' },
-        { label: 'Denemeden Üyeliğe', value: '%68', trend: '+%9 dönüşüm' },
-        { label: 'Takip Görevi', value: '7 görev', trend: 'Bugün tamamlanacak' }
+        { label: 'Kanallar', value: '3 kanal', trend: 'Tek gelen kutusu' },
+        { label: 'Yeni Konuşma', value: 'CRM adayı', trend: 'Kaynak bilgisiyle' },
+        { label: 'Takip', value: 'Görev', trend: 'Sorumlu ekip üyesi' }
       ],
-      listTitle: 'Bugünün CRM Takip Listesi',
+      listTitle: 'Temsili Sosyal CRM Akışı',
       listItems: [
-        { primary: 'Ece A. — Deneme Reformer Seansı', secondary: 'Dün katıldı • Paket teklifi bekliyor', tag: 'Sıcak Lead', tagColor: 'bg-emerald-100 text-emerald-800' },
-        { primary: 'Mert K. — 14 gündür gelmedi', secondary: 'Son görüşme notu ve tercih ettiği eğitmen kayıtlı', tag: 'Geri Kazan', tagColor: 'bg-mint-light text-teal-800' },
-        { primary: 'Selin Y. — Pakette 2 ders kaldı', secondary: 'Yenileme görevi: Bugün 16:00', tag: 'Yenileme', tagColor: 'bg-zinc-100 text-zinc-800' }
+        { primary: 'Instagram DM — Deneme dersi', secondary: 'Yeni konuşma • CRM adayı oluşturuldu', tag: 'Yeni Aday', tagColor: 'bg-emerald-100 text-emerald-800' },
+        { primary: 'WhatsApp Business — Paket sorusu', secondary: 'Satış ekibine atandı • Geri dönüş bugün', tag: 'Takipte', tagColor: 'bg-mint-light text-teal-800' },
+        { primary: 'Messenger — Kurs programı', secondary: 'Kaynak: Facebook • İlk görüşme aşaması', tag: 'İlk Görüşme', tagColor: 'bg-zinc-100 text-zinc-800' }
       ]
     }
   },
@@ -262,13 +262,41 @@ export const STUDIO_TYPES: StudioTypeInfo[] = [
     description: 'Danışan, hizmet, ekip ve ödeme süreçlerini sakin ve sade şekilde yönet.',
     iconName: 'HeartHandshake',
     badge: 'Hizmet & Danışan'
+  },
+  {
+    id: 'dance',
+    title: 'Dans Stüdyoları',
+    description: 'Sosyal medyadan gelen kurs taleplerini CRM’e al; sınıf, eğitmen, kayıt ve paketleri yönet.',
+    iconName: 'Activity',
+    badge: 'Kurs & Sınıf'
+  },
+  {
+    id: 'gymnastics',
+    title: 'Jimnastik Salonları',
+    description: 'Veli ve öğrenci adaylarını, yaş gruplarını, ders programlarını ve dönem kayıtlarını takip et.',
+    iconName: 'Building2',
+    badge: 'Öğrenci & Veli'
+  },
+  {
+    id: 'padel',
+    title: 'Padel Kulüpleri',
+    description: 'Kort, ders ve üyelik taleplerini sosyal mesajlaşmadan rezervasyon ve satış akışına taşı.',
+    iconName: 'CircleDot',
+    badge: 'Kort & Rezervasyon'
+  },
+  {
+    id: 'sports_course',
+    title: 'Spor Kursları',
+    description: 'Farklı branşlarda aday, öğrenci, veli, dönem, ders ve tahsilat süreçlerini birleştir.',
+    iconName: 'Layers',
+    badge: 'Branş & Dönem'
   }
 ];
 
 export const CORE_FEATURES: CoreFeatureItem[] = [
   {
-    title: 'Fitness CRM & Üye Yönetimi',
-    description: 'Lead’leri, üye profillerini, görüşme notlarını, görevleri ve tüm yaşam döngüsünü tek yerde tut.',
+    title: 'Sosyal Mesajlaşma & Fitness CRM',
+    description: 'WhatsApp Business, Instagram DM ve Messenger konuşmalarını tek gelen kutusunda topla; her yazışmayı CRM adayına dönüştür.',
     iconName: 'Users'
   },
   {

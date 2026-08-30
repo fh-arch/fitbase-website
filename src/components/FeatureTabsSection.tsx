@@ -8,8 +8,7 @@ interface FeatureTabsSectionProps {
 }
 
 export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDemo }) => {
-  // Default active tab is 'booking' ("Rezervasyon")
-  const [activeTabId, setActiveTabId] = useState<FeatureTabKey>('booking');
+  const [activeTabId, setActiveTabId] = useState<FeatureTabKey>('crm');
 
   const activeTabData = FEATURE_TABS.find((tab) => tab.id === activeTabId) || FEATURE_TABS[0];
 
@@ -26,7 +25,7 @@ export const FeatureTabsSection: React.FC<FeatureTabsSectionProps> = ({ onOpenDe
             Stüdyonu güvenle yönet
           </h2>
           <p className="text-base sm:text-lg text-[#5F6368] mt-3">
-            Üye CRM’inden rezervasyona, ödemeden ekip ve raporlamaya kadar tüm stüdyo operasyonlarını sade ve entegre modüllerle yönetin.
+            WhatsApp Business, Instagram DM ve Facebook Messenger’dan gelen adayları CRM’e alın; rezervasyon, ödeme, ekip ve raporlamaya kadar tüm operasyonu entegre yönetin.
           </p>
         </div>
 

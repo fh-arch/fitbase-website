@@ -4,7 +4,11 @@ export type StudioTypeKey =
   | 'pilates' 
   | 'personal_training' 
   | 'boutique_gym' 
-  | 'wellness';
+  | 'wellness'
+  | 'dance'
+  | 'gymnastics'
+  | 'padel'
+  | 'sports_course';
 
 export interface StudioTypeInfo {
   id: StudioTypeKey;

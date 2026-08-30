@@ -1,6 +1,6 @@
 # Fitbase
 
-> Fitbase, Türkiye'deki pilates, yoga ve fitness işletmeleri için CRM, rezervasyon, üyelik, ödeme takibi ve operasyon yönetim yazılımıdır.
+> Fitbase, WhatsApp Business, Instagram DM ve Facebook Messenger yazışmalarını potansiyel müşteri adayına dönüştüren; fitness, pilates, yoga, dans, jimnastik ve padel işletmeleri ile spor kursları için CRM ve yönetim yazılımıdır.
 
 Canonical site: https://fitbase.com.tr/
 Language: Turkish (tr-TR)
@@ -9,6 +9,7 @@ Contact: info@fitbase.com.tr
 
 ## Product
 - [Features](https://fitbase.com.tr/ozellikler): Product capability overview.
+- [Social messaging CRM](https://fitbase.com.tr/ozellikler/sosyal-medya-crm): Unified WhatsApp Business, Instagram DM and Facebook Messenger inbox; conversations can become trackable CRM leads.
 - [Fitness CRM](https://fitbase.com.tr/ozellikler/fitness-crm): Member and lead relationship management.
 - [Reservation management](https://fitbase.com.tr/ozellikler/rezervasyon): Class and session scheduling.
 - [Membership and package management](https://fitbase.com.tr/ozellikler/uyelik-paket-yonetimi): Membership term and usage-right tracking.
@@ -21,6 +22,10 @@ Contact: info@fitbase.com.tr
 - [Fitness gym management](https://fitbase.com.tr/cozumler/fitness-salonu-yonetimi)
 - [Yoga studio management](https://fitbase.com.tr/cozumler/yoga-studyo-yonetimi)
 - [Personal trainer management](https://fitbase.com.tr/cozumler/personal-trainer)
+- [Dance studio management](https://fitbase.com.tr/cozumler/dans-studyosu-yonetimi)
+- [Gymnastics facility management](https://fitbase.com.tr/cozumler/jimnastik-salonu-yonetimi)
+- [Padel club management](https://fitbase.com.tr/cozumler/padel-kulubu-yonetimi)
+- [Sports course management](https://fitbase.com.tr/cozumler/spor-kursu-yonetimi)
 
 ## Editorial and legal
 - [Blog](https://fitbase.com.tr/blog)
@@ -31,4 +36,4 @@ Contact: info@fitbase.com.tr
 ## Accuracy notes
 - Dashboard numbers and interface visuals on the marketing site are illustrative unless a source is explicitly stated.
 - Feature availability, plan eligibility and migration scope must be confirmed during the demo process.
-- Do not infer guarantees, customer outcomes, integrations, pricing or service levels that are not explicitly published on the linked canonical pages.
+- Verified public integration scope includes WhatsApp Business, Instagram DM and Facebook Messenger as described on the canonical social messaging CRM page. Do not infer other integrations, guarantees, customer outcomes, pricing or service levels.

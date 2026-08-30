@@ -125,8 +125,8 @@ export const legalEntity: LegalEntity = {
     {
       name: "Meta Platforms Ireland Ltd.",
       purpose:
-        "Siteden WhatsApp üzerinden iletişim ve demo talebi. Yalnızca ziyaretçi WhatsApp "
-        + "butonunu kullanmayı seçtiğinde devreye girer.",
+        "WhatsApp Business, Instagram DM ve Facebook Messenger entegrasyonları üzerinden "
+        + "müşteri iletişimi ve CRM aday yönetimi; ayrıca siteden isteğe bağlı WhatsApp demo talebi.",
       region: "İrlanda (AB)",
     },
   ],

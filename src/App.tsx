@@ -5,6 +5,7 @@ import { AnnouncementBar } from './components/AnnouncementBar';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { FeatureTabsSection } from './components/FeatureTabsSection';
+import { SocialInboxSection } from './components/SocialInboxSection';
 import { StudioTypesSection } from './components/StudioTypesSection';
 import { CorePlatformSection } from './components/CorePlatformSection';
 import { BlogSection } from './components/BlogSection';
@@ -47,6 +48,8 @@ export default function App() {
         <HeroSection 
           onOpenDemo={() => setIsDemoModalOpen(true)} 
         />
+
+        <SocialInboxSection onOpenDemo={() => setIsDemoModalOpen(true)} />
 
         {/* 4. Feature Tabs Section */}
         <FeatureTabsSection 

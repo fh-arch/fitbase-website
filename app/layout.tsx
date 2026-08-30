@@ -6,7 +6,7 @@ import { siteConfig } from "../src/siteConfig";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Fitbase | Fitness ve Stüdyo Yönetim Yazılımı",
+    default: "Fitbase | Sosyal Mesajlaşma Entegrasyonlu Fitness CRM",
     template: "%s | Fitbase",
   },
   description: siteConfig.description,
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "/",
     siteName: siteConfig.name,
-    title: "Fitbase | Fitness ve Stüdyo Yönetim Yazılımı",
+    title: "Fitbase | WhatsApp, Instagram ve Messenger Entegrasyonlu Fitness CRM",
     description: siteConfig.description,
     images: [{ url: "/fitbase-hero-athletes.png", width: 1536, height: 1024, alt: "Fitbase stüdyo yönetim platformu" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fitbase | Fitness ve Stüdyo Yönetim Yazılımı",
+    title: "Fitbase | Sosyal Mesajlaşma Entegrasyonlu Fitness CRM",
     description: siteConfig.description,
     images: ["/fitbase-hero-athletes.png"],
   },

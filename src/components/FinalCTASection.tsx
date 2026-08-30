@@ -25,7 +25,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenDemo }) 
         </h2>
 
         <p className="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-2xl mx-auto mb-10">
-          Fitbase’in fitness CRM, rezervasyon, üyelik, ödeme takibi ve ekip süreçlerini nasıl bir araya getirdiğini işletmenizin akışı üzerinden görün.
+          WhatsApp Business, Instagram DM ve Facebook Messenger konuşmalarının nasıl CRM adayına dönüştüğünü; rezervasyon, üyelik, ödeme takibi ve ekip süreçleriyle nasıl birleştiğini görün.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">

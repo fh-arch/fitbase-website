@@ -14,6 +14,12 @@ interface FAQSectionProps {
 
 const FAQ_DATA: FAQItem[] = [
   {
+    id: 'social-crm',
+    category: 'Yönetim & Ekip',
+    question: 'WhatsApp Business, Instagram DM ve Facebook Messenger mesajları Fitbase CRM’e nasıl aktarılır?',
+    answer: 'Bağlanan işletme hesaplarına gelen konuşmalar Fitbase birleşik gelen kutusunda görünür. Yeni yazan kişi kaynak kanalıyla birlikte potansiyel müşteri adayı olarak kaydedilebilir; görüşme ekip üyesine atanır, satış aşaması ve geri dönüş görevi aynı CRM kaydından takip edilir.'
+  },
+  {
     id: '1',
     category: 'Kurulum & Geçiş',
     question: 'Mevcut üye verilerimi ve kalan ders paketlerimi fitbase’e nasıl aktarabilirim?',

@@ -35,6 +35,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           <div className="space-y-3">
             <h3 className="font-bold text-[#252525] uppercase tracking-wider text-[11px]">Ürün</h3>
             <ul className="space-y-2 font-medium">
+              <li><a href="/ozellikler/sosyal-medya-crm" className="hover:text-[#252525] transition-colors">Sosyal Medya CRM</a></li>
               <li><a href="/ozellikler/fitness-crm" className="hover:text-[#252525] transition-colors">Fitness CRM</a></li>
               <li><a href="/ozellikler/rezervasyon" className="hover:text-[#252525] transition-colors">Rezervasyon</a></li>
               <li><a href="/ozellikler/uyelik-paket-yonetimi" className="hover:text-[#252525] transition-colors">Üyelik & Paketler</a></li>
@@ -51,6 +52,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
               <li><a href="/cozumler/yoga-studyo-yonetimi" className="hover:text-[#252525] transition-colors">Yoga Stüdyoları</a></li>
               <li><a href="/cozumler/pilates-studyo-yonetimi" className="hover:text-[#252525] transition-colors">Pilates Stüdyoları</a></li>
               <li><a href="/cozumler/personal-trainer" className="hover:text-[#252525] transition-colors">Personal Trainer</a></li>
+              <li><a href="/cozumler/dans-studyosu-yonetimi" className="hover:text-[#252525] transition-colors">Dans Stüdyoları</a></li>
+              <li><a href="/cozumler/jimnastik-salonu-yonetimi" className="hover:text-[#252525] transition-colors">Jimnastik Salonları</a></li>
+              <li><a href="/cozumler/padel-kulubu-yonetimi" className="hover:text-[#252525] transition-colors">Padel Kulüpleri</a></li>
+              <li><a href="/cozumler/spor-kursu-yonetimi" className="hover:text-[#252525] transition-colors">Spor Kursları</a></li>
             </ul>
           </div>
 

@@ -12,21 +12,40 @@ export type MarketingPage = {
 
 export const featurePages: MarketingPage[] = [
   {
+    slug: "sosyal-medya-crm",
+    kind: "feature",
+    title: "WhatsApp, Instagram ve Messenger Entegrasyonlu CRM",
+    eyebrow: "Sosyal mesajlaşmadan satış fırsatına",
+    description: "WhatsApp Business, Instagram DM ve Facebook Messenger konuşmalarını tek gelen kutusunda yönetin; her yeni yazışmayı takip edilebilir potansiyel müşteri adayına dönüştürün.",
+    intro: "Fitbase sosyal medya CRM entegrasyonu, farklı mesaj kutularına dağılan satış görüşmelerini merkezi bir ekip akışında toplar. Yeni bir yazışma CRM adayı olarak kaydedilebilir; görüşme geçmişi, sorumlu kişi, satış aşaması ve takip görevi aynı kayıtta ilerler.",
+    problems: ["Üç farklı gelen kutusunda kaybolan talepler", "Yanıtsız veya geç yanıtlanan deneme dersi soruları", "Sosyal medya görüşmelerinin CRM ve satış sürecine aktarılamaması"],
+    capabilities: [
+      { title: "Birleşik gelen kutusu", description: "WhatsApp Business, Instagram DM ve Facebook Messenger yazışmalarını tek ekip görünümünde takip edin." },
+      { title: "Otomatik aday kaydı", description: "Sosyal kanaldan yazan kişiyi iletişim kaynağıyla birlikte potansiyel müşteri adayına dönüştürün." },
+      { title: "Satış ve takip akışı", description: "Görüşmeyi sorumlu kişiye atayın, satış aşamasını belirleyin ve sıradaki geri dönüşü planlayın." },
+    ],
+    faq: [
+      { question: "Fitbase hangi sosyal mesajlaşma kanallarıyla entegre çalışır?", answer: "Fitbase; WhatsApp Business, Instagram DM ve Facebook Messenger yazışmalarını merkezi CRM ve gelen kutusu akışına bağlar." },
+      { question: "Instagram veya WhatsApp’tan yazan kişi nasıl müşteri adayına dönüşür?", answer: "Yeni konuşma, geldiği kanal bilgisiyle CRM’de potansiyel müşteri adayı olarak kaydedilebilir. Ekip görüşme geçmişini görür, sorumlu atar, satış aşamasını günceller ve takip görevi planlar." },
+      { question: "Birden fazla ekip üyesi sosyal medya mesajlarını yönetebilir mi?", answer: "Birleşik gelen kutusu yaklaşımı görüşmelerin ekip tarafından ortak görünmesini, sorumlu kişiye atanmasını ve takibin kişisel mesaj kutularına bağlı kalmamasını sağlar." },
+    ],
+  },
+  {
     slug: "fitness-crm",
     kind: "feature",
     title: "Fitness CRM ve Üye Takibi",
     eyebrow: "Üye ilişkileri",
-    description: "Fitness, pilates ve yoga işletmeleri için aday üye, aktif üye, görüşme ve takip süreçlerini tek yerde yönetin.",
-    intro: "Fitbase Fitness CRM; üye adayından aktif üyeliğe uzanan iletişim sürecini ekip için görünür ve takip edilebilir hâle getirmek üzere tasarlanır.",
+    description: "Spor işletmeleri için sosyal medyadan gelen adayları, aktif üyeleri, görüşmeleri ve takip süreçlerini tek yerde yönetin.",
+    intro: "Fitbase Fitness CRM; WhatsApp Business, Instagram DM ve Facebook Messenger üzerinden başlayan bir konuşmadan aktif üyeliğe uzanan süreci ekip için görünür ve takip edilebilir hâle getirir.",
     problems: ["Dağınık üye ve aday kayıtları", "Unutulan geri dönüşler", "Ekip içinde görünmeyen görüşme geçmişi"],
     capabilities: [
-      { title: "Merkezi üye profili", description: "İletişim, üyelik ve operasyon notlarını aynı profil etrafında düzenleyin." },
+      { title: "Sosyal kanaldan CRM profiline", description: "Mesajlaşma kanalından gelen konuşmayı iletişim kaynağı ve geçmişiyle birlikte aday profiline dönüştürün." },
       { title: "Takip akışı", description: "Aday üyeleri aşamalarına göre sınıflandırın ve sıradaki görüşmeyi planlayın." },
       { title: "Rol bazlı çalışma", description: "Ekip üyelerinin ihtiyaç duyduğu bilgilere kontrollü biçimde erişmesini sağlayın." },
     ],
     faq: [
       { question: "Fitness CRM nedir?", answer: "Fitness CRM; spor işletmelerinin üye adaylarını, aktif üyelerini, iletişim geçmişini ve takip görevlerini düzenlemek için kullandığı müşteri ilişkileri yönetimi yapısıdır." },
-      { question: "Fitbase yalnızca fitness salonları için mi?", answer: "Hayır. Fitbase; fitness salonları yanında pilates ve yoga stüdyolarının üye ve operasyon süreçlerine de odaklanır." },
+      { question: "Fitbase yalnızca fitness salonları için mi?", answer: "Hayır. Fitbase; fitness, pilates, yoga, dans ve jimnastik işletmeleri, padel kulüpleri, personal trainer ekipleri ve spor kurslarına yöneliktir." },
     ],
   },
   {
@@ -126,6 +145,10 @@ export const solutionPages: MarketingPage[] = [
   ["fitness-salonu-yonetimi", "Fitness Salonu Yönetim Programı", "Fitness salonları", "Üye adaylarını, aktif üyelikleri, tahsilat kayıtlarını ve ekip görevlerini tek operasyon görünümünde birleştirin."],
   ["yoga-studyo-yonetimi", "Yoga Stüdyo Yönetim Programı", "Yoga stüdyoları", "Ders programını, kontenjanları, üyelik paketlerini ve katılımcı takibini sade bir merkezden yönetin."],
   ["personal-trainer", "Personal Trainer Yönetim Programı", "Kişisel antrenörler", "Danışan, birebir seans, paket hakkı ve ödeme kayıtlarını dağınık araçlar yerine tek düzende takip edin."],
+  ["dans-studyosu-yonetimi", "Dans Stüdyosu Yönetim Programı", "Dans stüdyoları", "Sosyal medyadan gelen kurs taleplerini CRM adayına dönüştürün; sınıf, eğitmen, kayıt, paket ve tahsilat süreçlerini yönetin."],
+  ["jimnastik-salonu-yonetimi", "Jimnastik Salonu Yönetim Programı", "Jimnastik salonları", "Çocuk ve yetişkin programları için aday veli iletişimini, öğrenci kayıtlarını, grup takvimini ve paketleri tek düzende yönetin."],
+  ["padel-kulubu-yonetimi", "Padel Kulübü Yönetim Programı", "Padel kulüpleri", "WhatsApp ve sosyal medyadan gelen kort, ders ve üyelik taleplerini CRM, rezervasyon ve takip akışına bağlayın."],
+  ["spor-kursu-yonetimi", "Spor Kursu Yönetim Programı", "Spor kursları", "Farklı branşlardaki kurs taleplerini, öğrenci ve veli iletişimini, dönem kayıtlarını, dersleri ve tahsilatları merkezi yönetin."],
 ].map(([slug, title, eyebrow, description]) => ({
   slug,
   kind: "solution" as const,
@@ -133,15 +156,16 @@ export const solutionPages: MarketingPage[] = [
   eyebrow,
   description,
   intro: `${title}, günlük operasyonun üye deneyimi ve ekip takibiyle birlikte yürütülmesine yardımcı olan bir yazılım yaklaşımıdır.`,
-  problems: ["Mesajlar ve tablolar arasında dağılan kayıtlar", "Takvim ve paket bilgisinin güncel kalmaması", "Ekip için ortak operasyon görünümünün eksikliği"],
+  problems: ["WhatsApp ve sosyal medya mesajlarında kaybolan adaylar", "Takvim ve paket bilgisinin güncel kalmaması", "Ekip için ortak satış ve operasyon görünümünün eksikliği"],
   capabilities: [
-    { title: "Üye ve aday takibi", description: "İletişim geçmişini ve sıradaki takip adımını ortak bir düzende tutun." },
+    { title: "Sosyal mesajdan müşteri adayına", description: "WhatsApp Business, Instagram DM ve Messenger konuşmalarını CRM adayına ve takip akışına dönüştürün." },
     { title: "Ders ve seans planlama", description: "Takvim, kapasite ve katılımcı bilgisini operasyonun merkezine alın." },
     { title: "Paket ve tahsilat görünümü", description: "Üyelik hakkı ile ödeme kayıtlarını ilişkili biçimde izleyin." },
   ],
   faq: [
     { question: `${title} kimler için uygundur?`, answer: `${eyebrow} için üye, rezervasyon, paket ve operasyon kayıtlarını tek bir sistemde düzenlemek isteyen işletmelere yöneliktir.` },
     { question: "Kurulumdan önce hangi bilgiler değerlendirilir?", answer: "İşletme türü, ekip yapısı, ders ve paket modelleri ile mevcut veri kaynakları demo görüşmesinde değerlendirilir; kesin kapsam bundan sonra paylaşılır." },
+    { question: "Sosyal medyadan gelen talepler Fitbase’e aktarılır mı?", answer: "Evet. WhatsApp Business, Instagram DM ve Facebook Messenger üzerinden başlayan yazışmalar birleşik gelen kutusunda yönetilebilir ve CRM’de potansiyel müşteri adayı olarak takip edilebilir." },
   ],
 }));
 

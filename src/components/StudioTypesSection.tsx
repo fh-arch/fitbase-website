@@ -31,14 +31,14 @@ export const StudioTypesSection: React.FC<StudioTypesSectionProps> = ({ onSelect
             SENİN İŞLETMEN İÇİN
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#252525] tracking-tight">
-            Her stüdyo türü için tek sade platform
+            Her spor işletmesi için tek bağlantılı platform
           </h2>
           <p className="text-base sm:text-lg text-[#5F6368] mt-3">
-            Farklı disiplin ve büyüklükteki tüm stüdyolar için uyarlanabilir, sakin ve verimli çözümler.
+            Fitness, pilates, yoga, dans ve jimnastik stüdyoları; padel kulüpleri, personal trainer ekipleri ve spor kursları için uyarlanabilir çözümler.
           </p>
         </div>
 
-        {/* 6 Cards Grid */}
+        {/* Business type cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {STUDIO_TYPES.map((studio) => (
             <div

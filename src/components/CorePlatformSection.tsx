@@ -28,7 +28,7 @@ export const CorePlatformSection: React.FC = () => {
             Stüdyonun ihtiyacı olan her şey tek sade temelde
           </h2>
           <p className="text-base sm:text-lg text-[#5F6368] mt-4 max-w-2xl mx-auto">
-            fitbase; ön büro, satış ekibi, eğitmenler ve üyeleri tek bağlantılı işletim sisteminde buluşturur.
+            fitbase; sosyal medya gelen kutularını, satış ekibini, ön büroyu, eğitmenleri ve üyeleri tek bağlantılı işletim sisteminde buluşturur.
           </p>
         </div>
 

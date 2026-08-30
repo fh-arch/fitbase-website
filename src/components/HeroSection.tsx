@@ -21,16 +21,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-white/80 border border-[#C9D8C5] shadow-xs mb-5 sm:mb-6">
               <CircleDot className="w-3.5 h-3.5 text-teal-800" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.12em] sm:tracking-wider text-[#252525]">
-                FITNESS YÖNETİM YAZILIMI
+                SOSYAL MESAJLAŞMA ENTEGRASYONLU FITNESS CRM
               </span>
             </div>
 
             <h1 className="text-[2.35rem] sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-[#252525] tracking-[-0.045em] leading-[1.04] mb-5 sm:mb-6">
-              Pilates, yoga ve fitness stüdyoları için <span className="relative">CRM ve yönetim yazılımı.<span className="absolute left-0 -bottom-1 h-2 w-full rounded-full bg-[#18F28D]/55 -z-10" /></span>
+              Her sosyal medya mesajını <span className="relative">potansiyel müşteriye dönüştür.<span className="absolute left-0 -bottom-1 h-2 w-full rounded-full bg-[#18F28D]/55 -z-10" /></span>
             </h1>
 
             <p className="text-base sm:text-lg text-[#5F6368] leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              Üye adaylarını, rezervasyonları, paketleri, tahsilat kayıtlarını ve ekip görevlerini tek bir operasyon görünümünde düzenleyin. Güncel özellik kapsamını işletmenize özel demoda birlikte doğrulayın.
+              WhatsApp Business, Instagram DM ve Facebook Messenger’dan gelen yazışmaları tek gelen kutusunda toplayın. Her konuşmayı CRM adayına dönüştürün; sorumlu atayın, satış aşamasını ve geri dönüşü takip edin. Rezervasyon, üyelik, paket ve tahsilat süreçlerini aynı platformda yönetin.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mb-8">
@@ -51,9 +51,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
 
             <div className="grid sm:grid-cols-3 gap-3 text-left">
               {[
-                ['Tek panel', 'ortak operasyon görünümü'],
-                ['Rol bazlı', 'ekip erişim düzeni'],
-                ['Takip akışı', 'aday ve üye süreçleri'],
+                ['3 kanal', 'tek gelen kutusu'],
+                ['CRM adayı', 'her yeni yazışmadan'],
+                ['Satış takibi', 'atanan sorumlu ve aşama'],
               ].map(([value, label]) => (
                 <div key={label} className="rounded-2xl border border-white/80 bg-white/55 px-4 py-3 backdrop-blur-sm">
                   <strong className="block text-lg text-[#252525]">{value}</strong>
@@ -90,7 +90,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
         </div>
 
         <div className="grid grid-cols-1 gap-3 text-xs text-[#5F6368] font-medium mt-10 mb-10 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-6 sm:mt-12 sm:mb-12">
-          {['İşletmeye özel ürün değerlendirmesi', 'Şeffaf kapsam doğrulaması', 'Türkçe iletişim'].map((item) => (
+          {['WhatsApp Business entegrasyonu', 'Instagram DM entegrasyonu', 'Facebook Messenger entegrasyonu'].map((item) => (
             <span key={item} className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-teal-800" />{item}
             </span>

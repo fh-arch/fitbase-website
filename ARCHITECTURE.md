@@ -2,6 +2,7 @@
 
 - `/` — brand and product overview
 - `/ozellikler` — feature hub
+  - `/sosyal-medya-crm`
   - `/fitness-crm`
   - `/rezervasyon`
   - `/uyelik-paket-yonetimi`
@@ -13,6 +14,10 @@
   - `/fitness-salonu-yonetimi`
   - `/yoga-studyo-yonetimi`
   - `/personal-trainer`
+  - `/dans-studyosu-yonetimi`
+  - `/jimnastik-salonu-yonetimi`
+  - `/padel-kulubu-yonetimi`
+  - `/spor-kursu-yonetimi`
 - `/fiyatlandirma` — transparent quotation criteria
 - `/veri-tasima` — migration process and limits
 - `/demo` — WhatsApp/email conversion

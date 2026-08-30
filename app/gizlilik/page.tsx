@@ -185,7 +185,7 @@ export default function PrivacyPage() {
 
       <h2>8. Mesajlaşma hesapları</h2>
       <p>
-        Bir stüdyo kendi WhatsApp Business veya Instagram işletme hesabını bağlarsa, o hesaba gelen
+        Bir stüdyo kendi WhatsApp Business, Instagram işletme veya Facebook Messenger hesabını bağlarsa, bu hesaplara gelen
         ve o hesaptan giden mesajlar Fitbase üzerinde saklanır ve yalnızca o stüdyoya gösterilir.
         Bağlantı yalnızca sağlayıcının resmî yetkilendirme akışıyla kurulur; hesap şifresi hiçbir
         zaman istenmez ve saklanmaz. Stüdyo bağlantıyı kaldırdığında erişim yetkisi sağlayıcı
