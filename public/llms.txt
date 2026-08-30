@@ -1,0 +1,34 @@
+# Fitbase
+
+> Fitbase, Türkiye'deki pilates, yoga ve fitness işletmeleri için CRM, rezervasyon, üyelik, ödeme takibi ve operasyon yönetim yazılımıdır.
+
+Canonical site: https://fitbase.com.tr/
+Language: Turkish (tr-TR)
+Publisher: HAFA BİLİŞİM DANIŞMANLIK GIDA MAKİNA İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ
+Contact: info@fitbase.com.tr
+
+## Product
+- [Features](https://fitbase.com.tr/ozellikler): Product capability overview.
+- [Fitness CRM](https://fitbase.com.tr/ozellikler/fitness-crm): Member and lead relationship management.
+- [Reservation management](https://fitbase.com.tr/ozellikler/rezervasyon): Class and session scheduling.
+- [Membership and package management](https://fitbase.com.tr/ozellikler/uyelik-paket-yonetimi): Membership term and usage-right tracking.
+- [Payment tracking](https://fitbase.com.tr/ozellikler/odeme-takibi): Operational payment-record tracking; Fitbase is not described here as a payment processor.
+- [Workflows](https://fitbase.com.tr/ozellikler/otomasyonlar): Team tasks and repeatable operational flows.
+- [Reporting](https://fitbase.com.tr/ozellikler/raporlama): Reservation, membership and collection visibility.
+
+## Solutions
+- [Pilates studio management](https://fitbase.com.tr/cozumler/pilates-studyo-yonetimi)
+- [Fitness gym management](https://fitbase.com.tr/cozumler/fitness-salonu-yonetimi)
+- [Yoga studio management](https://fitbase.com.tr/cozumler/yoga-studyo-yonetimi)
+- [Personal trainer management](https://fitbase.com.tr/cozumler/personal-trainer)
+
+## Editorial and legal
+- [Blog](https://fitbase.com.tr/blog)
+- [Privacy Policy](https://fitbase.com.tr/gizlilik)
+- [KVKK Notice](https://fitbase.com.tr/kvkk)
+- [Terms of Use](https://fitbase.com.tr/kosullar)
+
+## Accuracy notes
+- Dashboard numbers and interface visuals on the marketing site are illustrative unless a source is explicitly stated.
+- Feature availability, plan eligibility and migration scope must be confirmed during the demo process.
+- Do not infer guarantees, customer outcomes, integrations, pricing or service levels that are not explicitly published on the linked canonical pages.

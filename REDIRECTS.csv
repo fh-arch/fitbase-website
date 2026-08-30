@@ -1,0 +1,4 @@
+source,target,status,owner
+http://fitbase.com.tr/*,https://fitbase.com.tr/$1,301,Cloudflare/Nginx
+http://www.fitbase.com.tr/*,https://fitbase.com.tr/$1,301,Cloudflare/Nginx
+https://www.fitbase.com.tr/*,https://fitbase.com.tr/$1,301,Cloudflare/Nginx

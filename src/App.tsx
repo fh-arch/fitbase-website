@@ -7,11 +7,6 @@ import { HeroSection } from './components/HeroSection';
 import { FeatureTabsSection } from './components/FeatureTabsSection';
 import { StudioTypesSection } from './components/StudioTypesSection';
 import { CorePlatformSection } from './components/CorePlatformSection';
-import { GrowthRetentionSection } from './components/GrowthRetentionSection';
-import { DashboardSection } from './components/DashboardSection';
-import { BrandedAppSection } from './components/BrandedAppSection';
-import { PricingSection } from './components/PricingSection';
-import { TestimonialSection } from './components/TestimonialSection';
 import { BlogSection } from './components/BlogSection';
 import { FAQSection } from './components/FAQSection';
 import { FinalCTASection } from './components/FinalCTASection';
@@ -65,27 +60,6 @@ export default function App() {
 
         {/* 6. Core Platform Section */}
         <CorePlatformSection />
-
-        {/* 7. Growth & Retention Section */}
-        <GrowthRetentionSection 
-          onOpenDemo={() => setIsDemoModalOpen(true)} 
-        />
-
-        {/* 8. Dashboard Insights Section */}
-        <DashboardSection />
-
-        {/* 9. Branded App / Member Experience Section */}
-        <BrandedAppSection 
-          onOpenDemo={() => setIsDemoModalOpen(true)} 
-        />
-
-        {/* 10. Pricing Preview Section */}
-        <PricingSection 
-          onOpenDemo={() => setIsDemoModalOpen(true)} 
-        />
-
-        {/* 11. Testimonials Section */}
-        <TestimonialSection />
 
         {/* 12. Blog & Guide Section */}
         <BlogSection 

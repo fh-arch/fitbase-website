@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           
           {/* Brand Info */}
           <div className="col-span-2 sm:col-span-2 md:col-span-1 space-y-4">
-            <a href="#top" className="inline-flex items-center" aria-label="Fitbase ana sayfa">
+            <a href="/" className="inline-flex items-center" aria-label="Fitbase ana sayfa">
               <img src="/fitbase-logo.png" alt="Fitbase" className="h-10 w-auto max-w-[169px] object-contain" />
             </a>
             
@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
 
             <div className="pt-1">
               <span className="inline-block px-2.5 py-1 rounded-md bg-[#FAF7F2] border border-[#E7E7E2] text-[10px] font-semibold text-[#252525]">
-                📍 Türkiye & AB Stüdyo Ağı
+                Türkiye merkezli ürün ve destek
               </span>
             </div>
           </div>
@@ -35,12 +35,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           <div className="space-y-3">
             <h3 className="font-bold text-[#252525] uppercase tracking-wider text-[11px]">Ürün</h3>
             <ul className="space-y-2 font-medium">
-              <li><a href="#features" className="hover:text-[#252525] transition-colors">Fitness CRM</a></li>
-              <li><a href="#features" className="hover:text-[#252525] transition-colors">Rezervasyon</a></li>
-              <li><a href="#features" className="hover:text-[#252525] transition-colors">Ödemeler</a></li>
-              <li><a href="#features" className="hover:text-[#252525] transition-colors">Pazarlama</a></li>
-              <li><a href="#features" className="hover:text-[#252525] transition-colors">Raporlama</a></li>
-              <li><a href="#features" className="hover:text-[#252525] transition-colors">Branded App</a></li>
+              <li><a href="/ozellikler/fitness-crm" className="hover:text-[#252525] transition-colors">Fitness CRM</a></li>
+              <li><a href="/ozellikler/rezervasyon" className="hover:text-[#252525] transition-colors">Rezervasyon</a></li>
+              <li><a href="/ozellikler/uyelik-paket-yonetimi" className="hover:text-[#252525] transition-colors">Üyelik & Paketler</a></li>
+              <li><a href="/ozellikler/odeme-takibi" className="hover:text-[#252525] transition-colors">Ödeme Takibi</a></li>
+              <li><a href="/ozellikler/raporlama" className="hover:text-[#252525] transition-colors">Raporlama</a></li>
             </ul>
           </div>
 
@@ -48,11 +47,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           <div className="space-y-3">
             <h3 className="font-bold text-[#252525] uppercase tracking-wider text-[11px]">İşletme Türleri</h3>
             <ul className="space-y-2 font-medium">
-              <li><a href="#studio-types" className="hover:text-[#252525] transition-colors">Fitness Stüdyoları</a></li>
-              <li><a href="#studio-types" className="hover:text-[#252525] transition-colors">Yoga Stüdyoları</a></li>
-              <li><a href="#studio-types" className="hover:text-[#252525] transition-colors">Pilates Stüdyoları</a></li>
-              <li><a href="#studio-types" className="hover:text-[#252525] transition-colors">Personal Training</a></li>
-              <li><a href="#studio-types" className="hover:text-[#252525] transition-colors">Wellness İşletmeleri</a></li>
+              <li><a href="/cozumler/fitness-salonu-yonetimi" className="hover:text-[#252525] transition-colors">Fitness Salonları</a></li>
+              <li><a href="/cozumler/yoga-studyo-yonetimi" className="hover:text-[#252525] transition-colors">Yoga Stüdyoları</a></li>
+              <li><a href="/cozumler/pilates-studyo-yonetimi" className="hover:text-[#252525] transition-colors">Pilates Stüdyoları</a></li>
+              <li><a href="/cozumler/personal-trainer" className="hover:text-[#252525] transition-colors">Personal Trainer</a></li>
             </ul>
           </div>
 
@@ -60,9 +58,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
           <div className="space-y-3">
             <h3 className="font-bold text-[#252525] uppercase tracking-wider text-[11px]">Şirket</h3>
             <ul className="space-y-2 font-medium">
-              <li><a href="#about" className="hover:text-[#252525] transition-colors">Hakkımızda</a></li>
-              <li><a href="#pricing" className="hover:text-[#252525] transition-colors">Fiyatlandırma</a></li>
-              <li><a href="#blog" className="hover:text-[#252525] transition-colors">Blog & Rehberler</a></li>
+              <li><a href="/ozellikler" className="hover:text-[#252525] transition-colors">Ürün</a></li>
+              <li><a href="/fiyatlandirma" className="hover:text-[#252525] transition-colors">Fiyatlandırma</a></li>
+              <li><a href="/veri-tasima" className="hover:text-[#252525] transition-colors">Veri Taşıma</a></li>
+              <li><a href="/blog" className="hover:text-[#252525] transition-colors">Blog & Rehberler</a></li>
               <li><button onClick={onOpenDemo} className="hover:text-[#252525] transition-colors text-left cursor-pointer">İletişim & Demo</button></li>
             </ul>
           </div>
@@ -72,7 +71,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
             <h3 className="font-bold text-[#252525] uppercase tracking-wider text-[11px]">Destek</h3>
             <ul className="space-y-2 font-medium">
               <li><a href="#faq" className="hover:text-[#252525] transition-colors">Sıkça Sorulan Sorular (SSS)</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); alert('7/24 Canlı Destek ve rehberler için fitbase Müşteri Hizmetleri ile iletişime geçebilirsiniz.'); }} className="hover:text-[#252525] transition-colors">Yardım Merkezi</a></li>
+              <li><a href="mailto:info@fitbase.com.tr" className="hover:text-[#252525] transition-colors">E-posta Desteği</a></li>
               <li><button onClick={onOpenStaffLogin} className="hover:text-[#252525] transition-colors font-semibold text-[#252525] cursor-pointer">Personel Girişi ↗</button></li>
               {/*
                 Real pages, not alert() summaries.
@@ -128,9 +127,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStaffLogin, onOpenDemo }) 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
           <p>© 2026 fitbase. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
-            <span>KVKK Uyumlu</span>
-            <span>256-bit SSL Güvenliği</span>
-            <span>SLA %99.9 Uptime</span>
+            <span>Şeffaf veri politikası</span>
+            <span>HTTPS ile korunur</span>
           </div>
         </div>
 

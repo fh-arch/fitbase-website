@@ -10,9 +10,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo, onOpenStaffLogin }) 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Özellikler', href: '#features' },
-    { name: 'İşletme Türleri', href: '#studio-types' },
-    { name: 'Fiyatlandırma', href: '#pricing' },
+    { name: 'Özellikler', href: '/ozellikler' },
+    { name: 'Çözümler', href: '/cozumler' },
+    { name: 'Blog', href: '/blog' },
   ];
 
   return (
@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo, onOpenStaffLogin }) 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] sm:h-20 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <a href="#top" className="flex items-center group" aria-label="Fitbase ana sayfa">
+        <a href="/" className="flex items-center group" aria-label="Fitbase ana sayfa">
           <img
             src="/fitbase-logo.png"
             alt="Fitbase"

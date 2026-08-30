@@ -17,55 +17,55 @@ const FAQ_DATA: FAQItem[] = [
     id: '1',
     category: 'Kurulum & Geçiş',
     question: 'Mevcut üye verilerimi ve kalan ders paketlerimi fitbase’e nasıl aktarabilirim?',
-    answer: 'fitbase Onboarding ekibi, mevcut Excel tablolarınızdaki veya önceki yazılımınızdaki üye listelerinizi, aktif üyelik paketlerini ve kalan hakları 15 dakika içinde sistemimize ücretsiz olarak aktarır. Hiçbir üye verisi kaybolmaz.'
+    answer: 'Mevcut veri kaynağı, alan yapısı ve kayıt kalitesi önce değerlendirilir. Aktarılabilecek alanlar, sorumluluklar, süre ve varsa ücret demo sonrasında yazılı olarak netleştirilir; inceleme yapılmadan kayıpsız veya belirli sürede geçiş garantisi verilmez.'
   },
   {
     id: '2',
     category: 'Kurulum & Geçiş',
     question: 'Kurulum süresi ne kadardır ve stüdyo ekibine eğitim veriliyor mu?',
-    answer: 'fitbase bulut tabanlı bir platformdur; kurulum veya karmaşık donanım gerektirmez. Hesabınız aynı gün açılır. Eğitmenleriniz ve resepsiyon ekibiniz için 30 dakikalık canlı Türkçe online eğitim organize edilir.'
+    answer: 'Kurulum süresi işletmenin ekip, paket, takvim ve veri yapısına bağlıdır. Güncel onboarding adımları ile eğitim kapsamı demo görüşmesinde netleştirilir.'
   },
   {
     id: '3',
     category: 'Ödemeler & Mobil',
     question: 'Üyelerimizin mobil uygulamadan ders rezerve etmesi için ekstra ücret ödenir mi?',
-    answer: 'Hayır. Tüm paketlerimizde üye mobil uygulaması (iOS & Android) sınırsız sayıda üyeniz için tamamen ücretsizdir. Üyeleriniz kalan ders haklarını görebilir, tek tıkla ders rezerve edebilir ve bildirim alabilir.'
+    answer: 'Mobil deneyim ve plan kapsamı ürün geliştikçe değişebilir. Desteklenen uygulama özellikleri, kullanıcı sınırları ve fiyat etkisi teklif öncesinde yazılı olarak doğrulanır.'
   },
   {
     id: '4',
     category: 'Ödemeler & Mobil',
     question: 'Kredi kartı ve sanal POS entegrasyonu (iyzico, Paratika vb.) destekleniyor mu?',
-    answer: 'Evet. fitbase, Türkiye’nin önde gelen sanal POS altyapılarıyla ve iyzico ile doğrudan entegredir. Dilerseniz üyelerinize online paket satabilir, dilerseniz aylık tekrarlayan otomatik kart çekimleriyle düzenli gelir akışı oluşturabilirsiniz.'
+    answer: 'Fitbase’in kamuya açık mevcut anlatımı tahsilat kaydı ve ödeme takibine odaklanır. Doğrudan ödeme alma veya belirli bir sanal POS entegrasyonu, güncel olarak destekleniyorsa demo sırasında adı ve kapsamıyla doğrulanır.'
   },
   {
     id: '5',
     category: 'Yönetim & Ekip',
     question: 'Eğitmenlerimizin prim ve hakediş hesaplamaları otomatik yapılıyor mu?',
-    answer: 'Evet! Eğitmenlerinizin tamamladığı ders sayısı, katılan üye sayısı veya sabit ders başı ücret kurallarına göre hakedişler otomatik hesaplanır. Ay sonunda tek tıkla eğitmen prim raporunu indirebilirsiniz.'
+    answer: 'Ekip rolleri ve operasyon kayıtları Fitbase’in temel çalışma alanlarındandır. Hakediş veya prim hesaplama kurallarının güncel kapsamı işletme senaryosu üzerinden demo sırasında doğrulanır.'
   },
   {
     id: '6',
     category: 'Yönetim & Ekip',
     question: 'Birden fazla şubem varsa tüm stüdyolarımı tek hesaptan yönetebilir miyim?',
-    answer: 'Evet. fitbase Çoklu Şube Mimarisi sayesinde şubeler arası üye geçişlerini, şube bazlı gelir raporlarını ve eğitmen ders dağılımlarını tek bir ana panelden anlık olarak takip edebilirsiniz.'
+    answer: 'Çok şubeli işletmelerin yetki, rapor ve üye hareketi gereksinimleri farklıdır. Desteklenen çoklu şube kapsamı ve sınırlar teklif öncesinde yazılı olarak netleştirilir.'
   },
   {
     id: '7',
     category: 'Yönetim & Ekip',
     question: 'Eğitmenler kendi telefonlarından ders takvimini ve katılım durumunu görebilir mi?',
-    answer: 'Evet. Eğitmenler kendilerine özel roller ile giriş yaparak sadece kendi derslerini, katılan üye listelerini ve ders içi notlarını görebilir. Finansal verilere veya diğer eğitmenlerin müşteri bilgilerine erişemezler.'
+    answer: 'Fitbase rol bazlı ekip kullanımını hedefler. Her rolün görebileceği alanlar ve yetki ayrıntıları güncel ürün sürümünde demo sırasında gösterilir.'
   },
   {
     id: '9',
     category: 'Yönetim & Ekip',
     question: 'fitbase’in fitness CRM özelliği neleri takip eder?',
-    answer: 'Fitness CRM; reklam, form, telefon veya sosyal medyadan gelen lead’leri, deneme derslerini, görüşme notlarını, takip görevlerini ve satış aşamalarını tek profilde toplar. Üye olduktan sonra ders geçmişi, paket durumu, devamsızlık, yenileme zamanı ve iletişim geçmişi aynı profilde devam eder. Böylece ekip hiçbir fırsatı veya üyeyi gözden kaçırmaz.'
+    answer: 'Fitness CRM; aday ve üye kayıtlarını, görüşme notlarını ve takip görevlerini ortak bir profil etrafında düzenlemeyi amaçlar. Kanal entegrasyonları ve profil alanları güncel kapsam içinde ayrıca doğrulanır.'
   },
   {
     id: '8',
     category: 'Kurulum & Geçiş',
     question: 'Uzun süreli sözleşme taahhüdü var mı? İstediğim zaman iptal edebilir miyim?',
-    answer: 'Herhangi bir uzun süreli taahhüt yoktur. fitbase’i aylık abonelik modeliyle kullanabilir, dilediğiniz zaman tek tıkla aboneliğinizi sonlandırabilirsiniz. Verileriniz her zaman güvendedir ve dışa aktarılabilir.'
+    answer: 'Abonelik süresi, iptal, veri dışa aktarma ve saklama koşulları imzalanacak güncel teklif ve kullanım koşullarında açıkça belirtilir. Karar vermeden önce bu belgeleri incelemenizi öneririz.'
   }
 ];
 

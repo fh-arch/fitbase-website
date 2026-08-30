@@ -25,7 +25,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenDemo }) 
         </h2>
 
         <p className="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-2xl mx-auto mb-10">
-          fitbase’in fitness CRM, rezervasyon, üyelik, ödeme ve retention süreçlerini tek sakin ve bağlantılı platformda nasıl birleştirdiğini gör.
+          Fitbase’in fitness CRM, rezervasyon, üyelik, ödeme takibi ve ekip süreçlerini nasıl bir araya getirdiğini işletmenizin akışı üzerinden görün.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
@@ -38,7 +38,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenDemo }) 
           </button>
 
           <a
-            href="#features"
+            href="/ozellikler"
             className="w-full sm:w-auto px-9 py-4 rounded-2xl bg-transparent text-white font-semibold text-sm border border-zinc-700 hover:border-white hover:bg-zinc-800 transition-all flex items-center justify-center cursor-pointer"
           >
             Özellikleri İncele
@@ -48,11 +48,11 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenDemo }) 
         <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-400 font-medium">
           <span className="flex items-center gap-1.5">
             <CheckCircle className="w-4 h-4 text-[#18F28D]" />
-            15 dakikada kurulur
+            Kapsam demoda doğrulanır
           </span>
           <span className="flex items-center gap-1.5">
             <CheckCircle className="w-4 h-4 text-[#18F28D]" />
-            Taahhüt gerektirmez
+            İşletmeye özel değerlendirme
           </span>
           <span className="flex items-center gap-1.5">
             <CheckCircle className="w-4 h-4 text-[#18F28D]" />

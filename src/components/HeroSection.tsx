@@ -26,11 +26,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             </div>
 
             <h1 className="text-[2.35rem] sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-[#252525] tracking-[-0.045em] leading-[1.04] mb-5 sm:mb-6">
-              Stüdyon büyürken <span className="relative whitespace-nowrap">kontrol sende.<span className="absolute left-0 -bottom-1 h-2 w-full rounded-full bg-[#18F28D]/55 -z-10" /></span>
+              Pilates, yoga ve fitness stüdyoları için <span className="relative">CRM ve yönetim yazılımı.<span className="absolute left-0 -bottom-1 h-2 w-full rounded-full bg-[#18F28D]/55 -z-10" /></span>
             </h1>
 
             <p className="text-base sm:text-lg text-[#5F6368] leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              Fitness CRM, rezervasyon, ödeme, ekip ve üye deneyimini tek sakin platformda birleştir. Her lead’i ve üyeyi doğru anda takip et; daha az manuel iş, daha yüksek doluluk ve daha güçlü bağlılık kazan.
+              Üye adaylarını, rezervasyonları, paketleri, tahsilat kayıtlarını ve ekip görevlerini tek bir operasyon görünümünde düzenleyin. Güncel özellik kapsamını işletmenize özel demoda birlikte doğrulayın.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mb-8">
@@ -42,7 +42,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
                 <ArrowRight className="w-4 h-4 text-[#18F28D] group-hover:translate-x-1 transition-transform" />
               </button>
               <a
-                href="#features"
+                href="/ozellikler"
                 className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/80 text-[#252525] font-semibold text-sm border border-[#C9D8C5] hover:bg-white hover:-translate-y-1 transition-all flex items-center justify-center"
               >
                 Platformu Keşfet
@@ -51,9 +51,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
 
             <div className="grid sm:grid-cols-3 gap-3 text-left">
               {[
-                ['%94', 'ortalama doluluk'],
-                ['12 saat', 'haftalık tasarruf'],
-                ['15 dk', 'hızlı kurulum'],
+                ['Tek panel', 'ortak operasyon görünümü'],
+                ['Rol bazlı', 'ekip erişim düzeni'],
+                ['Takip akışı', 'aday ve üye süreçleri'],
               ].map(([value, label]) => (
                 <div key={label} className="rounded-2xl border border-white/80 bg-white/55 px-4 py-3 backdrop-blur-sm">
                   <strong className="block text-lg text-[#252525]">{value}</strong>
@@ -79,18 +79,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             <div className="float-card absolute left-2 sm:-left-8 bottom-3 sm:bottom-6 rounded-2xl bg-white/95 p-3 sm:p-4 shadow-xl border border-white backdrop-blur-md">
               <div className="flex items-center gap-3">
                 <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#18F28D]"><TrendingUp className="h-5 w-5" /></span>
-                <div><strong className="block text-sm">+%18 büyüme</strong><span className="text-[11px] text-[#5F6368]">bu ayın performansı</span></div>
+                <div><strong className="block text-sm">Temsili panel</strong><span className="text-[11px] text-[#5F6368]">örnek arayüz verisi</span></div>
               </div>
             </div>
             <div className="float-card-delayed absolute right-2 sm:-right-6 top-3 sm:top-6 rounded-2xl bg-[#252525]/95 p-3 sm:p-4 text-white shadow-xl backdrop-blur-md">
               <div className="flex items-center gap-2 text-xs font-semibold"><span className="h-2.5 w-2.5 rounded-full bg-[#18F28D]" /> Canlı stüdyo durumu</div>
-              <p className="mt-1 text-[11px] text-zinc-300">8 seans • %94 doluluk</p>
+              <p className="mt-1 text-[11px] text-zinc-300">Örnek ekran • Gerçek müşteri verisi değildir</p>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-3 text-xs text-[#5F6368] font-medium mt-10 mb-10 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-6 sm:mt-12 sm:mb-12">
-          {['Kredi kartı gerekmez', '15 dakikada hızlı kurulum', 'Ücretsiz veri taşıma desteği'].map((item) => (
+          {['İşletmeye özel ürün değerlendirmesi', 'Şeffaf kapsam doğrulaması', 'Türkçe iletişim'].map((item) => (
             <span key={item} className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-teal-800" />{item}
             </span>
@@ -116,7 +116,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
             <div className="flex shrink-0 items-center gap-2">
               <span className="inline-flex items-center gap-1 text-[9px] sm:text-[11px] font-semibold px-2 sm:px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-                Canlı Stüdyo Durumu
+                Temsili ürün görünümü
               </span>
             </div>
           </div>
@@ -172,15 +172,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
                 <div className="bg-white p-2.5 rounded-xl border border-[#E7E7E2] flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
                   <div>
-                    <p className="font-medium text-[#252525]">SMS Hatırlatma Gönderildi</p>
-                    <p className="text-[10px] text-zinc-500">24 Üye • No-show engellendi</p>
+                    <p className="font-medium text-[#252525]">Takip görevi oluşturuldu</p>
+                    <p className="text-[10px] text-zinc-500">Örnek üye operasyonu</p>
                   </div>
                 </div>
                 <div className="bg-white p-2.5 rounded-xl border border-[#E7E7E2] flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
                   <div>
-                    <p className="font-medium text-[#252525]">Paket Yenileme Teklifi</p>
-                    <p className="text-[10px] text-zinc-500">Son 2 dersi kalan 4 üyeye iletildi</p>
+                    <p className="font-medium text-[#252525]">Paket kontrolü planlandı</p>
+                    <p className="text-[10px] text-zinc-500">Temsili iş akışı</p>
                   </div>
                 </div>
               </div>
@@ -194,21 +194,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDemo }) => {
                   Aylık Performans
                 </span>
                 <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">
-                  +%18 Büyüme
+                  Örnek rapor
                 </span>
               </div>
               <div className="bg-white p-3 rounded-xl border border-[#E7E7E2] text-xs">
                 <div className="flex justify-between items-baseline mb-2">
                   <span className="text-[11px] text-zinc-500">Doluluk Oranı:</span>
-                  <span className="font-bold text-[#252525] text-sm">%92.4</span>
+                  <span className="font-bold text-[#252525] text-sm">Temsili</span>
                 </div>
                 {/* Visual Bar */}
                 <div className="w-full bg-zinc-100 rounded-full h-2 overflow-hidden mb-3">
-                  <div className="bg-[#252525] h-2 rounded-full w-[92%]" />
+                  <div className="bg-[#252525] h-2 rounded-full w-2/3" />
                 </div>
                 <div className="flex justify-between items-center text-[11px] pt-1 border-t border-zinc-100">
-                  <span className="text-zinc-500">Üye Elde Tutma:</span>
-                  <span className="font-semibold text-emerald-700">%89 Retention</span>
+                  <span className="text-zinc-500">Veri durumu:</span>
+                  <span className="font-semibold text-emerald-700">Örnek gösterim</span>
                 </div>
               </div>
             </div>

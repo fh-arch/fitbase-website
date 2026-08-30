@@ -1,5 +1,6 @@
 import App from "../src/App";
 import { siteConfig } from "../src/siteConfig";
+import { legalEntity } from "../src/legalEntity";
 
 export default function HomePage() {
   const structuredData = {
@@ -9,6 +10,7 @@ export default function HomePage() {
         "@type": "Organization",
         "@id": `${siteConfig.url}/#organization`,
         name: siteConfig.name,
+        legalName: legalEntity.legalName,
         url: siteConfig.url,
         logo: {
           "@type": "ImageObject",
@@ -18,6 +20,8 @@ export default function HomePage() {
         },
         description: siteConfig.description,
         areaServed: "TR",
+        address: { "@type": "PostalAddress", streetAddress: legalEntity.address, addressCountry: "TR" },
+        contactPoint: { "@type": "ContactPoint", telephone: legalEntity.phone, email: legalEntity.contactEmail, contactType: "customer support", availableLanguage: "Turkish" },
       },
       {
         "@type": "WebSite",
