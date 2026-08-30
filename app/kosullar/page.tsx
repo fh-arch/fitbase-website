@@ -13,7 +13,7 @@ export default function TermsPage() {
   const entity = legalEntity;
 
   return (
-    <LegalPage title="Kullanım Koşulları" updated="7 Ağustos 2026">
+    <LegalPage title="Kullanım Koşulları" updated="30 Ağustos 2026">
       <h1>Kullanım Koşulları</h1>
       <p className="lede">
         Bu koşullar, {entity.legalName} tarafından sunulan Fitbase hizmetinin kullanımını düzenler.
@@ -85,7 +85,7 @@ export default function TermsPage() {
 
       <h2>8. İletişim</h2>
       <p>
-        {entity.legalName}, {entity.address}.{" "}
+        {entity.legalName}, {entity.address}. Telefon: {entity.phone}. MERSİS: {entity.mersisNumber}.{" "}
         {entity.contactEmail ? (
           <a href={`mailto:${entity.contactEmail}`}>{entity.contactEmail}</a>
         ) : (
