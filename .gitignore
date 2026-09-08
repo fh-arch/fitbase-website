@@ -7,3 +7,6 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# TypeScript incremental build state — machine-local, never shared.
+*.tsbuildinfo
